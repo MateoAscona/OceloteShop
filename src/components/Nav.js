@@ -1,11 +1,12 @@
 import React from 'react'
+import CartWidget from './CartWidget'
+import NavLinks from './NavLinks'
 
 const Nav = () => {
   return (
     <nav className='nav'>
-        <li className='nav-item'><a href='' className='a__nav-item'>Buscar</a></li>
-        <li className='nav-item'><a href='' className='a__nav-item'>Carrito</a></li>
-        <li className='nav-item'><a href='' className='a__nav-item'>Login</a></li>
+        <NavLinks/>
+        <CartWidget/>
     </nav>
   )
 }
