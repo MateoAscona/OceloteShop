@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
-function ItemListContainer( {gretting} ) {
-  return (
-    <h1>{gretting}</h1>
-  )
-}
+const ItemListContainer = ({ gretting }) => {
+  return <h1>{gretting}</h1>;
+};
 
-export default ItemListContainer
+export default ItemListContainer;

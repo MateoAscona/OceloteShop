@@ -1,13 +1,11 @@
-import React from 'react'
+import React from "react";
 
-function CartWidget() {
+const CartWidget = () => {
   return (
     <div>
-        <span class="material-icons nav-item">
-                shopping_cart
-        </span>
+      <span class="material-icons nav-item">shopping_cart</span>
     </div>
-  )
-}
+  );
+};
 
-export default CartWidget
+export default CartWidget;

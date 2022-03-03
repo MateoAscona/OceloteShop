@@ -1,27 +1,60 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.header-style{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: rgb(107, 43, 167);
-    box-shadow: 0 1px 4px black;
-    height: 3em;
+.header-style {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(107, 43, 167);
+  box-shadow: 0 1px 4px black;
+  height: 3em;
 }
 
-.a__nav-item, .nav-item{
-    text-decoration: none;
-    list-style: none;
-    margin: 0.2em;
-    margin-left: 0.4em;
-    color: aliceblue;
+.a__nav-item,
+.nav-item {
+  text-decoration: none;
+  list-style: none;
+  margin: 0.2em;
+  margin-left: 0.4em;
+  color: aliceblue;
 }
 
-.nav{
-    display: flex;
-    justify-content: space-between;
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.countContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 60%;
+  margin: auto;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.buttonsContainer {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  width: 80%;
+  margin: 5px 0;
+}
+.countButtons {
+  padding: 3px 15px;
+  background-color: rgb(102, 27, 172);
+  font-size: large;
+  color: aliceblue;
+  font-weight: 600;
+  border-radius: 10px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.countText {
+  font-size: large;
+  font-weight: 600;
 }
