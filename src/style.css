@@ -58,3 +58,18 @@
   font-size: large;
   font-weight: 600;
 }
+
+.itemContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.itemStyle {
+  text-align: center;
+  margin: 10px;
+  background-color: rgb(158, 125, 248);
+  box-shadow: 0px 1px 4px black;
+}
