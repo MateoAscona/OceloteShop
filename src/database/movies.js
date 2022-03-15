@@ -1,453 +1,503 @@
 const titles = [{
   "id": 1,
-  "title": "Woman of the Year",
-  "category": "Comedy|Romance",
-  "year": 1997,
-  "company": "Bernier, Boyer and Considine",
-  "image": "https://dummyimage.com/200x200/a5a99e",
-  "descriptionShort": "Burn of first degree of other site of trunk",
-  "descriptionLong": "Burn of first degree of other site of trunk"
+  "title": "Edge of the City",
+  "category": "Drama|Film-Noir",
+  "year": 2008,
+  "company": "Nicolas and Sons",
+  "image": "https://dummyimage.com/200x200/33e229",
+  "descriptionShort": "Unsp car occ injured in clsn w rail trn/veh nontraf, init",
+  "descriptionLong": "Unspecified car occupant injured in collision with railway train or railway vehicle in nontraffic accident, initial encounter",
+  "stock": 22
 }, {
   "id": 2,
-  "title": "Dark Ride",
-  "category": "Horror|Thriller",
-  "year": 2005,
-  "company": "Senger Inc",
-  "image": "https://dummyimage.com/200x200/114e03",
-  "descriptionShort": "Oth parlyt synd fol oth ntrm intcrn hemor aff l nondom side",
-  "descriptionLong": "Other paralytic syndrome following other nontraumatic intracranial hemorrhage affecting left non-dominant side"
+  "title": "Back from Eternity",
+  "category": "Drama",
+  "year": 1998,
+  "company": "Davis LLC",
+  "image": "https://dummyimage.com/200x200/e879ec",
+  "descriptionShort": "Oth injury of vein at forearm level, unspecified arm",
+  "descriptionLong": "Other specified injury of vein at forearm level, unspecified arm",
+  "stock": 45
 }, {
   "id": 3,
-  "title": "In Their Skin",
-  "category": "Horror|Thriller",
-  "year": 2009,
-  "company": "Kerluke, Sipes and Walker",
-  "image": "https://dummyimage.com/200x200/ebc7a1",
-  "descriptionShort": "Toxic effect of rodenticides, intentional self-harm",
-  "descriptionLong": "Toxic effect of rodenticides, intentional self-harm"
+  "title": "Jiro Dreams of Sushi",
+  "category": "Documentary",
+  "year": 2007,
+  "company": "O'Conner-Bauch",
+  "image": "https://dummyimage.com/200x200/ad799d",
+  "descriptionShort": "Disp fx of neck of scapula, l shldr, subs for fx w nonunion",
+  "descriptionLong": "Displaced fracture of neck of scapula, left shoulder, subsequent encounter for fracture with nonunion",
+  "stock": 66
 }, {
   "id": 4,
-  "title": "Valhalla Rising",
-  "category": "Action|Drama|War",
-  "year": 1970,
-  "company": "Rodriguez Group",
-  "image": "https://dummyimage.com/200x200/229324",
-  "descriptionShort": "Breakdown (mechanical) of electronic bone stimulator, subs",
-  "descriptionLong": "Breakdown (mechanical) of electronic bone stimulator, subsequent encounter"
+  "title": "Kings of the Road (Im Lauf der Zeit)",
+  "category": "Drama",
+  "year": 2003,
+  "company": "Sawayn, Littel and Raynor",
+  "image": "https://dummyimage.com/200x200/717a6e",
+  "descriptionShort": "Tox eff of carb monx fr incmpl combst dmst fuel, acc, subs",
+  "descriptionLong": "Toxic effect of carbon monoxide from incomplete combustion of other domestic fuels, accidental (unintentional), subsequent encounter",
+  "stock": 45
 }, {
   "id": 5,
-  "title": "Tetsuo, the Ironman (Tetsuo)",
-  "category": "Action|Horror|Sci-Fi|Thriller",
-  "year": 1985,
-  "company": "Pagac-Kirlin",
-  "image": "https://dummyimage.com/200x200/87d480",
-  "descriptionShort": "Oth fx r low leg, subs for opn fx type 3A/B/C w delay heal",
-  "descriptionLong": "Other fracture of right lower leg, subsequent encounter for open fracture type IIIA, IIIB, or IIIC with delayed healing"
+  "title": "Killing Zoe",
+  "category": "Crime|Drama|Thriller",
+  "year": 2008,
+  "company": "Mills-Willms",
+  "image": "https://dummyimage.com/200x200/3a15ed",
+  "descriptionShort": "Major osseous defect, forearm",
+  "descriptionLong": "Major osseous defect, forearm",
+  "stock": 91
 }, {
   "id": 6,
-  "title": "Soul Man",
-  "category": "Comedy",
-  "year": 1994,
-  "company": "Stokes LLC",
-  "image": "https://dummyimage.com/200x200/ac0803",
-  "descriptionShort": "Pigmentary glaucoma, right eye, mild stage",
-  "descriptionLong": "Pigmentary glaucoma, right eye, mild stage"
+  "title": "God told Me To",
+  "category": "Crime|Horror|Mystery|Sci-Fi|Thriller",
+  "year": 2011,
+  "company": "Homenick, Roob and Gleichner",
+  "image": "https://dummyimage.com/200x200/75503e",
+  "descriptionShort": "Nondisp fx of body of hamate bone, unsp wrs, 7thP",
+  "descriptionLong": "Nondisplaced fracture of body of hamate [unciform] bone, unspecified wrist, subsequent encounter for fracture with malunion",
+  "stock": 7
 }, {
   "id": 7,
-  "title": "The Odyssey",
-  "category": "Adventure|Drama|Fantasy",
-  "year": 2002,
-  "company": "Hoeger-Mante",
-  "image": "https://dummyimage.com/200x200/bfe4f5",
-  "descriptionShort": "Toxic optic neuropathy",
-  "descriptionLong": "Toxic optic neuropathy"
+  "title": "Adrift in Tokyo (Tenten)",
+  "category": "Comedy|Drama",
+  "year": 2007,
+  "company": "Beier Group",
+  "image": "https://dummyimage.com/200x200/104558",
+  "descriptionShort": "Functional diarrhea",
+  "descriptionLong": "Functional diarrhea",
+  "stock": 5
 }, {
   "id": 8,
-  "title": "Owning Mahowny",
-  "category": "Crime|Drama|Thriller",
-  "year": 2001,
-  "company": "Morissette-Beer",
-  "image": "https://dummyimage.com/200x200/f0b612",
-  "descriptionShort": "Primary blast injury of bronchus, unspecified, sequela",
-  "descriptionLong": "Primary blast injury of bronchus, unspecified, sequela"
+  "title": "Steel Magnolias",
+  "category": "Drama",
+  "year": 2004,
+  "company": "Windler, Herman and Gaylord",
+  "image": "https://dummyimage.com/200x200/686d07",
+  "descriptionShort": "Traum rupt of palmar ligmt of unsp finger at MCP/IP jt, init",
+  "descriptionLong": "Traumatic rupture of palmar ligament of unspecified finger at metacarpophalangeal and interphalangeal joint, initial encounter",
+  "stock": 12
 }, {
   "id": 9,
-  "title": "My Name is Khan",
-  "category": "Drama|Romance",
-  "year": 1999,
-  "company": "Murray-Wiegand",
-  "image": "https://dummyimage.com/200x200/e17821",
-  "descriptionShort": "Acquired absence of pancreas",
-  "descriptionLong": "Acquired absence of pancreas"
+  "title": "Men in War",
+  "category": "Drama|War",
+  "year": 1997,
+  "company": "Turner, Rippin and Walker",
+  "image": "https://dummyimage.com/200x200/7e84e9",
+  "descriptionShort": "Unsp sprain of unspecified shoulder joint, init encntr",
+  "descriptionLong": "Unspecified sprain of unspecified shoulder joint, initial encounter",
+  "stock": 59
 }, {
   "id": 10,
-  "title": "The Suspended Step of the Stork",
-  "category": "Drama|Romance",
-  "year": 1997,
-  "company": "Mohr, Schmeler and Kassulke",
-  "image": "https://dummyimage.com/200x200/72ab42",
-  "descriptionShort": "Foreign body in alimentary tract",
-  "descriptionLong": "Foreign body in alimentary tract"
+  "title": "North Star (a.k.a. Tashunga)",
+  "category": "Action|Adventure|Crime|Drama|Western",
+  "year": 1968,
+  "company": "Kris-Huel",
+  "image": "https://dummyimage.com/200x200/9617e0",
+  "descriptionShort": "Disp fx of l tibial spin, 7thF",
+  "descriptionLong": "Displaced fracture of left tibial spine, subsequent encounter for open fracture type IIIA, IIIB, or IIIC with routine healing",
+  "stock": 83
 }, {
   "id": 11,
-  "title": "Harmonists, The",
-  "category": "Drama",
-  "year": 2004,
-  "company": "Kilback, Nitzsche and Donnelly",
-  "image": "https://dummyimage.com/200x200/cac28a",
-  "descriptionShort": "Unspecified chorioretinal scars, left eye",
-  "descriptionLong": "Unspecified chorioretinal scars, left eye"
+  "title": "State of Emergency",
+  "category": "Sci-Fi|Thriller",
+  "year": 1997,
+  "company": "McDermott-Emmerich",
+  "image": "https://dummyimage.com/200x200/bac3d5",
+  "descriptionShort": "Superficial frostbite of unspecified ear, subs encntr",
+  "descriptionLong": "Superficial frostbite of unspecified ear, subsequent encounter",
+  "stock": 65
 }, {
   "id": 12,
-  "title": "Don't Be Afraid of the Dark",
-  "category": "Horror|Thriller",
-  "year": 1998,
-  "company": "O'Conner-Russel",
-  "image": "https://dummyimage.com/200x200/1950b9",
-  "descriptionShort": "Unspecified dislocation of left middle finger, init encntr",
-  "descriptionLong": "Unspecified dislocation of left middle finger, initial encounter"
+  "title": "The Phantom Light",
+  "category": "Mystery|Thriller",
+  "year": 2007,
+  "company": "Hirthe-Bernhard",
+  "image": "https://dummyimage.com/200x200/b3f8d0",
+  "descriptionShort": "Calcifcn and ossifictn of muscles assoc w burns, r forearm",
+  "descriptionLong": "Calcification and ossification of muscles associated with burns, right forearm",
+  "stock": 21
 }, {
   "id": 13,
-  "title": "Being There",
+  "title": "Postcards From the Edge",
   "category": "Comedy|Drama",
-  "year": 2011,
-  "company": "Hyatt-Terry",
-  "image": "https://dummyimage.com/200x200/06e0d3",
-  "descriptionShort": "Oth physl fx upper end unsp tibia, subs for fx w delay heal",
-  "descriptionLong": "Other physeal fracture of upper end of unspecified tibia, subsequent encounter for fracture with delayed healing"
+  "year": 1992,
+  "company": "Mills, Rohan and Wiza",
+  "image": "https://dummyimage.com/200x200/b83977",
+  "descriptionShort": "Failure in dosage in electroshock or insulin-shock therapy",
+  "descriptionLong": "Failure in dosage in electroshock or insulin-shock therapy",
+  "stock": 43
 }, {
   "id": 14,
-  "title": "Mad Monster Party?",
-  "category": "Children|Comedy|Horror",
-  "year": 2005,
-  "company": "Breitenberg Group",
-  "image": "https://dummyimage.com/200x200/d33c7e",
-  "descriptionShort": "Atypical virus infection of central nervous system, unsp",
-  "descriptionLong": "Atypical virus infection of central nervous system, unspecified"
+  "title": "Little Miss Marker",
+  "category": "Comedy|Drama",
+  "year": 2008,
+  "company": "Nikolaus-Zieme",
+  "image": "https://dummyimage.com/200x200/47e0a5",
+  "descriptionShort": "Underdosing of hydantoin derivatives",
+  "descriptionLong": "Underdosing of hydantoin derivatives",
+  "stock": 59
 }, {
   "id": 15,
-  "title": "The Linguists",
-  "category": "Documentary",
-  "year": 2004,
-  "company": "Corwin Group",
-  "image": "https://dummyimage.com/200x200/1da4f4",
-  "descriptionShort": "Displaced associated transv/post fracture of unsp acetabulum",
-  "descriptionLong": "Displaced associated transverse-posterior fracture of unspecified acetabulum"
+  "title": "Stickup, The",
+  "category": "Action|Crime|Mystery",
+  "year": 2007,
+  "company": "Bauch LLC",
+  "image": "https://dummyimage.com/200x200/045b29",
+  "descriptionShort": "Shrt lst unil nerlgif hdache w cnjnct inject/tear, ntrct",
+  "descriptionLong": "Short lasting unilateral neuralgiform headache with conjunctival injection and tearing (SUNCT), intractable",
+  "stock": 60
 }, {
   "id": 16,
-  "title": "Fearful Symmetry: The Making of 'To Kill a Mockingbird'",
-  "category": "Documentary",
-  "year": 2013,
-  "company": "Kozey Inc",
-  "image": "https://dummyimage.com/200x200/381ed2",
-  "descriptionShort": "Superficial frostbite of unspecified wrist, subs encntr",
-  "descriptionLong": "Superficial frostbite of unspecified wrist, subsequent encounter"
-}, {
-  "id": 17,
-  "title": "Microphone",
-  "category": "Comedy|Drama|Musical",
-  "year": 2009,
-  "company": "Hackett-Huel",
-  "image": "https://dummyimage.com/200x200/f085ed",
-  "descriptionShort": "Pediculosis due to Pediculus humanus capitis",
-  "descriptionLong": "Pediculosis due to Pediculus humanus capitis"
-}, {
-  "id": 18,
-  "title": "Shopgirl",
-  "category": "Comedy|Drama|Romance",
-  "year": 2006,
-  "company": "Predovic, Pfannerstill and Wehner",
-  "image": "https://dummyimage.com/200x200/7fe410",
-  "descriptionShort": "Disp fx of coronoid pro of l ulna, 7thD",
-  "descriptionLong": "Displaced fracture of coronoid process of left ulna, subsequent encounter for closed fracture with routine healing"
-}, {
-  "id": 19,
-  "title": "Objectified",
-  "category": "Documentary",
-  "year": 2010,
-  "company": "Pfannerstill and Sons",
-  "image": "https://dummyimage.com/200x200/2d8664",
-  "descriptionShort": "Inj flexor musc/fasc/tend l idx fngr at forearm level, init",
-  "descriptionLong": "Other injury of flexor muscle, fascia and tendon of left index finger at forearm level, initial encounter"
-}, {
-  "id": 20,
-  "title": "Forbidden Games (Jeux interdits)",
-  "category": "Drama|War",
-  "year": 1990,
-  "company": "Weissnat, Herzog and Keeling",
-  "image": "https://dummyimage.com/200x200/df9cdd",
-  "descriptionShort": "Disord of visual pathways in inflam disord, left side",
-  "descriptionLong": "Disorders of visual pathways in (due to) inflammatory disorders, left side"
-}, {
-  "id": 21,
-  "title": "My Dog Skip",
-  "category": "Children|Drama",
-  "year": 2007,
-  "company": "Schiller and Sons",
-  "image": "https://dummyimage.com/200x200/bb943a",
-  "descriptionShort": "Bus occupant (driver) injured in oth transport accidents",
-  "descriptionLong": "Bus occupant (driver) (passenger) injured in other specified transport accidents"
-}, {
-  "id": 22,
-  "title": "Howl",
-  "category": "Drama",
-  "year": 1999,
-  "company": "Hammes, Marquardt and Lakin",
-  "image": "https://dummyimage.com/200x200/31dfc4",
-  "descriptionShort": "Tidal wave due to landslide",
-  "descriptionLong": "Tidal wave due to landslide"
-}, {
-  "id": 23,
-  "title": "Donos de Portugal",
-  "category": "Documentary",
-  "year": 2011,
-  "company": "Emmerich LLC",
-  "image": "https://dummyimage.com/200x200/7f4b47",
-  "descriptionShort": "Underdosing of analeptics and opioid receptor antag, sequela",
-  "descriptionLong": "Underdosing of analeptics and opioid receptor antagonists, sequela"
-}, {
-  "id": 24,
-  "title": "Naked Jungle, The",
-  "category": "Adventure|Drama",
-  "year": 1994,
-  "company": "Hermann, Hagenes and Hartmann",
-  "image": "https://dummyimage.com/200x200/637540",
-  "descriptionShort": "Displ spiral fx shaft of ulna, l arm, 7thB",
-  "descriptionLong": "Displaced spiral fracture of shaft of ulna, left arm, initial encounter for open fracture type I or II"
-}, {
-  "id": 25,
-  "title": "10 Questions for the Dalai Lama",
-  "category": "Documentary",
-  "year": 2007,
-  "company": "Champlin Inc",
-  "image": "https://dummyimage.com/200x200/3be840",
-  "descriptionShort": "Disp fx of distal phalanx of oth finger, init for opn fx",
-  "descriptionLong": "Displaced fracture of distal phalanx of other finger, initial encounter for open fracture"
-}, {
-  "id": 26,
-  "title": "We Are Legion: The Story of the Hacktivists",
-  "category": "Documentary",
-  "year": 1992,
-  "company": "Feil, Larson and McCullough",
-  "image": "https://dummyimage.com/200x200/ba8588",
-  "descriptionShort": "Corrosion of second degree of right upper arm, init encntr",
-  "descriptionLong": "Corrosion of second degree of right upper arm, initial encounter"
-}, {
-  "id": 27,
-  "title": "Vanilla Sky",
-  "category": "Mystery|Romance|Sci-Fi|Thriller",
-  "year": 1984,
-  "company": "Bernier-Hand",
-  "image": "https://dummyimage.com/200x200/983cbb",
-  "descriptionShort": "Hallucinogen use, unsp w oth hallucinogen-induced disorder",
-  "descriptionLong": "Hallucinogen use, unspecified with other specified hallucinogen-induced disorder"
-}, {
-  "id": 28,
-  "title": "Sword of Desperation (Hisshiken torisashi)",
-  "category": "Action|Drama",
-  "year": 2004,
-  "company": "Gislason, Kautzer and Bartell",
-  "image": "https://dummyimage.com/200x200/0eb5f9",
-  "descriptionShort": "Centric occlusion maximum intercuspation discrepancy",
-  "descriptionLong": "Centric occlusion maximum intercuspation discrepancy"
-}, {
-  "id": 29,
-  "title": "Meetin' WA",
-  "category": "Documentary",
-  "year": 2005,
-  "company": "Conn and Sons",
-  "image": "https://dummyimage.com/200x200/ddf654",
-  "descriptionShort": "Nondisp seg fx shaft of r femr, 7thG",
-  "descriptionLong": "Nondisplaced segmental fracture of shaft of right femur, subsequent encounter for closed fracture with delayed healing"
-}, {
-  "id": 30,
-  "title": "Killing Us Softly 4: Advertising's Image of Women",
-  "category": "Documentary",
-  "year": 1995,
-  "company": "Miller, Williamson and Schiller",
-  "image": "https://dummyimage.com/200x200/d07cb0",
-  "descriptionShort": "Corrosion of second degree of abdominal wall, init encntr",
-  "descriptionLong": "Corrosion of second degree of abdominal wall, initial encounter"
-}, {
-  "id": 31,
-  "title": "Ferris Bueller's Day Off",
-  "category": "Comedy",
-  "year": 2008,
-  "company": "Koch and Sons",
-  "image": "https://dummyimage.com/200x200/b007d4",
-  "descriptionShort": "Malignant neoplasm of overlapping sites of pancreas",
-  "descriptionLong": "Malignant neoplasm of overlapping sites of pancreas"
-}, {
-  "id": 32,
-  "title": "Mask of Fu Manchu, The",
-  "category": "Adventure|Horror|Sci-Fi",
-  "year": 2005,
-  "company": "Trantow and Sons",
-  "image": "https://dummyimage.com/200x200/8309e2",
-  "descriptionShort": "Mycosis fungoides, spleen",
-  "descriptionLong": "Mycosis fungoides, spleen"
-}, {
-  "id": 33,
-  "title": "Ricky Gervais Live 3: Fame",
-  "category": "Comedy",
-  "year": 2010,
-  "company": "Becker Group",
-  "image": "https://dummyimage.com/200x200/3f9d66",
-  "descriptionShort": "Contusion of eyeball and orbital tissues, left eye, init",
-  "descriptionLong": "Contusion of eyeball and orbital tissues, left eye, initial encounter"
-}, {
-  "id": 34,
-  "title": "7500",
-  "category": "Action|Horror|Mystery|Thriller",
-  "year": 1998,
-  "company": "Hayes, Conn and Will",
-  "image": "https://dummyimage.com/200x200/6a1660",
-  "descriptionShort": "Caught, crush, jammed, or pinched betw moving obj, sequela",
-  "descriptionLong": "Caught, crushed, jammed, or pinched between moving objects, sequela"
-}, {
-  "id": 35,
-  "title": "Tales from the Script",
-  "category": "Documentary",
-  "year": 2000,
-  "company": "Considine Inc",
-  "image": "https://dummyimage.com/200x200/01f614",
-  "descriptionShort": "Methemoglobinemia, unspecified",
-  "descriptionLong": "Methemoglobinemia, unspecified"
-}, {
-  "id": 36,
-  "title": "Bluebeard",
-  "category": "Thriller",
-  "year": 2010,
-  "company": "Raynor, Pouros and Swift",
-  "image": "https://dummyimage.com/200x200/c2a76e",
-  "descriptionShort": "Unspecified injury of prostate, subsequent encounter",
-  "descriptionLong": "Unspecified injury of prostate, subsequent encounter"
-}, {
-  "id": 37,
-  "title": "Debt, The",
-  "category": "Thriller",
-  "year": 2002,
-  "company": "Kunze Inc",
-  "image": "https://dummyimage.com/200x200/992dce",
-  "descriptionShort": "Other injury of unspecified part of pancreas",
-  "descriptionLong": "Other injury of unspecified part of pancreas"
-}, {
-  "id": 38,
-  "title": "Porco Rosso (Crimson Pig) (Kurenai no buta)",
-  "category": "Adventure|Animation|Comedy|Fantasy|Romance",
-  "year": 2003,
-  "company": "Volkman-Wisozk",
-  "image": "https://dummyimage.com/200x200/a34fb1",
-  "descriptionShort": "Non-in-line roller-skater colliding w statnry obj, init",
-  "descriptionLong": "Non-in-line roller-skater colliding with stationary object, initial encounter"
-}, {
-  "id": 39,
-  "title": "Noise",
-  "category": "Drama|Thriller",
-  "year": 1984,
-  "company": "Harber, Jakubowski and Anderson",
-  "image": "https://dummyimage.com/200x200/d871ed",
-  "descriptionShort": "Nondisp oth extrartic fx r calcaneus, subs for fx w nonunion",
-  "descriptionLong": "Nondisplaced other extraarticular fracture of right calcaneus, subsequent encounter for fracture with nonunion"
-}, {
-  "id": 40,
-  "title": "Innocent Blood",
-  "category": "Comedy|Horror",
-  "year": 1991,
-  "company": "Bode-Klocko",
-  "image": "https://dummyimage.com/200x200/e977f3",
-  "descriptionShort": "HELLP syndrome (HELLP), second trimester",
-  "descriptionLong": "HELLP syndrome (HELLP), second trimester"
-}, {
-  "id": 41,
-  "title": "For Neda",
+  "title": "The Ghosts in Our Machine",
   "category": "Documentary",
   "year": 1993,
-  "company": "Walker Inc",
-  "image": "https://dummyimage.com/200x200/1688bc",
-  "descriptionShort": "Exposure to other natural radiation",
-  "descriptionLong": "Exposure to other natural radiation"
+  "company": "Kuphal, Daniel and Mann",
+  "image": "https://dummyimage.com/200x200/24ce19",
+  "descriptionShort": "Third [oculomotor] nerve palsy, left eye",
+  "descriptionLong": "Third [oculomotor] nerve palsy, left eye",
+  "stock": 74
+}, {
+  "id": 17,
+  "title": "Prospero's Books",
+  "category": "Drama|Fantasy",
+  "year": 2005,
+  "company": "Willms-Nader",
+  "image": "https://dummyimage.com/200x200/5c82c7",
+  "descriptionShort": "Poisn by unsp antieplptc and sed-hypntc drugs, slf-hrm, sqla",
+  "descriptionLong": "Poisoning by unspecified antiepileptic and sedative-hypnotic drugs, intentional self-harm, sequela",
+  "stock": 33
+}, {
+  "id": 18,
+  "title": "Gigli",
+  "category": "Comedy|Crime|Romance",
+  "year": 2004,
+  "company": "Kilback-Rolfson",
+  "image": "https://dummyimage.com/200x200/1ae03d",
+  "descriptionShort": "Oth traum displ spondylolysis of seventh cervcal vert, init",
+  "descriptionLong": "Other traumatic displaced spondylolisthesis of seventh cervical vertebra, initial encounter for closed fracture",
+  "stock": 9
+}, {
+  "id": 19,
+  "title": "Drugstore Cowboy",
+  "category": "Crime|Drama",
+  "year": 1999,
+  "company": "Osinski, Torp and Gaylord",
+  "image": "https://dummyimage.com/200x200/233571",
+  "descriptionShort": "Open bite of left lesser toe(s) w damage to nail, subs",
+  "descriptionLong": "Open bite of left lesser toe(s) with damage to nail, subsequent encounter",
+  "stock": 9
+}, {
+  "id": 20,
+  "title": "Metropolitan",
+  "category": "Comedy",
+  "year": 2001,
+  "company": "Heidenreich, Littel and Gusikowski",
+  "image": "https://dummyimage.com/200x200/27d0fe",
+  "descriptionShort": "Unsp fx first MC bone, unsp hand, subs for fx w routn heal",
+  "descriptionLong": "Unspecified fracture of first metacarpal bone, unspecified hand, subsequent encounter for fracture with routine healing",
+  "stock": 4
+}, {
+  "id": 21,
+  "title": "Chiko",
+  "category": "Crime|Drama",
+  "year": 1986,
+  "company": "Hansen-Rowe",
+  "image": "https://dummyimage.com/200x200/623d0a",
+  "descriptionShort": "Disp fx of less tuberosity of r humer, 7thD",
+  "descriptionLong": "Displaced fracture of lesser tuberosity of right humerus, subsequent encounter for fracture with routine healing",
+  "stock": 39
+}, {
+  "id": 22,
+  "title": "Highlander II: The Quickening",
+  "category": "Action|Sci-Fi",
+  "year": 1997,
+  "company": "Greenfelder and Sons",
+  "image": "https://dummyimage.com/200x200/4dde0b",
+  "descriptionShort": "Athetoid cerebral palsy",
+  "descriptionLong": "Athetoid cerebral palsy",
+  "stock": 7
+}, {
+  "id": 23,
+  "title": "Bastards (Les salauds)",
+  "category": "Drama",
+  "year": 2009,
+  "company": "Bednar-Parisian",
+  "image": "https://dummyimage.com/200x200/69123e",
+  "descriptionShort": "Person outsd pk-up/van inj in clsn w pedl cyc in traf, subs",
+  "descriptionLong": "Person on outside of pick-up truck or van injured in collision with pedal cycle in traffic accident, subsequent encounter",
+  "stock": 93
+}, {
+  "id": 24,
+  "title": "Avengers, The",
+  "category": "Action|Adventure",
+  "year": 2006,
+  "company": "Heathcote Inc",
+  "image": "https://dummyimage.com/200x200/b8e28c",
+  "descriptionShort": "Secondary noninfectious iridocyclitis, left eye",
+  "descriptionLong": "Secondary noninfectious iridocyclitis, left eye",
+  "stock": 36
+}, {
+  "id": 25,
+  "title": "Wonderful and Loved by All (Underbar och älskad av alla)",
+  "category": "Comedy",
+  "year": 1994,
+  "company": "Hammes and Sons",
+  "image": "https://dummyimage.com/200x200/30d849",
+  "descriptionShort": "Disloc of proximal interphaln joint of l rng fngr, sequela",
+  "descriptionLong": "Dislocation of proximal interphalangeal joint of left ring finger, sequela",
+  "stock": 20
+}, {
+  "id": 26,
+  "title": "Island, The",
+  "category": "Adventure|Horror|Thriller",
+  "year": 1999,
+  "company": "Greenfelder, Kiehn and Stamm",
+  "image": "https://dummyimage.com/200x200/33311e",
+  "descriptionShort": "Unspecified superficial injury of unspecified thigh, sequela",
+  "descriptionLong": "Unspecified superficial injury of unspecified thigh, sequela",
+  "stock": 87
+}, {
+  "id": 27,
+  "title": "Somersault",
+  "category": "Drama",
+  "year": 2005,
+  "company": "Blanda-Jenkins",
+  "image": "https://dummyimage.com/200x200/724bf2",
+  "descriptionShort": "Pnctr w fb of unsp great toe w/o damage to nail, init",
+  "descriptionLong": "Puncture wound with foreign body of unspecified great toe without damage to nail, initial encounter",
+  "stock": 87
+}, {
+  "id": 28,
+  "title": "Brannigan",
+  "category": "Action",
+  "year": 1989,
+  "company": "Moore LLC",
+  "image": "https://dummyimage.com/200x200/575587",
+  "descriptionShort": "Monteggia's fx unsp ulna, 7thF",
+  "descriptionLong": "Monteggia's fracture of unspecified ulna, subsequent encounter for open fracture type IIIA, IIIB, or IIIC with routine healing",
+  "stock": 8
+}, {
+  "id": 29,
+  "title": "Fog City Mavericks",
+  "category": "Documentary",
+  "year": 2005,
+  "company": "Keeling-Langworth",
+  "image": "https://dummyimage.com/200x200/d9eba3",
+  "descriptionShort": "Strain unsp musc/fasc/tend at thi lev, right thigh, sequela",
+  "descriptionLong": "Strain of unspecified muscles, fascia and tendons at thigh level, right thigh, sequela",
+  "stock": 57
+}, {
+  "id": 30,
+  "title": "Don't Stop Believin': Everyman's Journey",
+  "category": "Documentary",
+  "year": 2007,
+  "company": "McKenzie-Koch",
+  "image": "https://dummyimage.com/200x200/237e25",
+  "descriptionShort": "Burn of second degree of left axilla, subsequent encounter",
+  "descriptionLong": "Burn of second degree of left axilla, subsequent encounter",
+  "stock": 9
+}, {
+  "id": 31,
+  "title": "Private School",
+  "category": "Comedy",
+  "year": 1999,
+  "company": "Bogisich-Collins",
+  "image": "https://dummyimage.com/200x200/ae28e7",
+  "descriptionShort": "Abn lev drug/meds/biol subst in specimens from resp org/thrx",
+  "descriptionLong": "Abnormal level of other drugs, medicaments and biological substances in specimens from respiratory organs and thorax",
+  "stock": 56
+}, {
+  "id": 32,
+  "title": "Guns of Navarone, The",
+  "category": "Action|Adventure|Drama|War",
+  "year": 2010,
+  "company": "Walsh-Wintheiser",
+  "image": "https://dummyimage.com/200x200/74f7da",
+  "descriptionShort": "Laceration with foreign body of thumb without damage to nail",
+  "descriptionLong": "Laceration with foreign body of thumb without damage to nail",
+  "stock": 31
+}, {
+  "id": 33,
+  "title": "Dear Zachary: A Letter to a Son About His Father",
+  "category": "Documentary",
+  "year": 2005,
+  "company": "Rosenbaum-Brakus",
+  "image": "https://dummyimage.com/200x200/cb7fd1",
+  "descriptionShort": "Inj flexor musc/fasc/tend thmb at forearm level, sequela",
+  "descriptionLong": "Other injury of flexor muscle, fascia and tendon of unspecified thumb at forearm level, sequela",
+  "stock": 75
+}, {
+  "id": 34,
+  "title": "Short Film About John Bolton, A",
+  "category": "Fantasy|Horror|Mystery",
+  "year": 1996,
+  "company": "Daniel, Kuphal and Vandervort",
+  "image": "https://dummyimage.com/200x200/013d9a",
+  "descriptionShort": "Unsp injury of radial artery at forarm lv, unsp arm, subs",
+  "descriptionLong": "Unspecified injury of radial artery at forearm level, unspecified arm, subsequent encounter",
+  "stock": 23
+}, {
+  "id": 35,
+  "title": "Leaves of Grass",
+  "category": "Comedy|Crime|Drama|Thriller",
+  "year": 1988,
+  "company": "Funk-Gutmann",
+  "image": "https://dummyimage.com/200x200/e46fe4",
+  "descriptionShort": "Other physeal fracture of right calcaneus, 7thB",
+  "descriptionLong": "Other physeal fracture of right calcaneus, initial encounter for open fracture",
+  "stock": 26
+}, {
+  "id": 36,
+  "title": "Wild About Harry",
+  "category": "Comedy|Drama|Romance",
+  "year": 2009,
+  "company": "Bartell-Walker",
+  "image": "https://dummyimage.com/200x200/53c8b6",
+  "descriptionShort": "Chronic multifocal osteomyelitis, left ankle and foot",
+  "descriptionLong": "Chronic multifocal osteomyelitis, left ankle and foot",
+  "stock": 30
+}, {
+  "id": 37,
+  "title": "Waiting Women (Kvinnors väntan)",
+  "category": "Comedy|Drama",
+  "year": 2011,
+  "company": "Adams-Mitchell",
+  "image": "https://dummyimage.com/200x200/d126e6",
+  "descriptionShort": "Other superficial bite, unspecified lower leg, sequela",
+  "descriptionLong": "Other superficial bite, unspecified lower leg, sequela",
+  "stock": 92
+}, {
+  "id": 38,
+  "title": "Kummeli V",
+  "category": "Comedy",
+  "year": 1996,
+  "company": "Kautzer Group",
+  "image": "https://dummyimage.com/200x200/8734e0",
+  "descriptionShort": "Displaced comminuted fracture of shaft of humerus, right arm",
+  "descriptionLong": "Displaced comminuted fracture of shaft of humerus, right arm",
+  "stock": 62
+}, {
+  "id": 39,
+  "title": "Electric Shadows (Meng ying tong nian)",
+  "category": "Drama",
+  "year": 2011,
+  "company": "Hayes-Jacobs",
+  "image": "https://dummyimage.com/200x200/bc7834",
+  "descriptionShort": "Laceration with foreign body, left hip, sequela",
+  "descriptionLong": "Laceration with foreign body, left hip, sequela",
+  "stock": 69
+}, {
+  "id": 40,
+  "title": "Sharon's Baby",
+  "category": "Horror",
+  "year": 2011,
+  "company": "Raynor LLC",
+  "image": "https://dummyimage.com/200x200/a28325",
+  "descriptionShort": "Adverse effect of ganglionic blocking drugs",
+  "descriptionLong": "Adverse effect of ganglionic blocking drugs",
+  "stock": 73
+}, {
+  "id": 41,
+  "title": "My Sister Eileen",
+  "category": "Comedy",
+  "year": 2007,
+  "company": "Lowe-Blanda",
+  "image": "https://dummyimage.com/200x200/1f62ed",
+  "descriptionShort": "Toxic effect of manganese and its compounds, undet, sequela",
+  "descriptionLong": "Toxic effect of manganese and its compounds, undetermined, sequela",
+  "stock": 45
 }, {
   "id": 42,
-  "title": "I've Loved You So Long (Il y a longtemps que je t'aime)",
-  "category": "Drama|Mystery",
-  "year": 2005,
-  "company": "Effertz, Lynch and Reilly",
-  "image": "https://dummyimage.com/200x200/5abd1a",
-  "descriptionShort": "Exudative cysts of iris or anterior chamber, right eye",
-  "descriptionLong": "Exudative cysts of iris or anterior chamber, right eye"
+  "title": "Big Trees, The",
+  "category": "Action|Drama",
+  "year": 1985,
+  "company": "Kihn, Dickens and Cronin",
+  "image": "https://dummyimage.com/200x200/19eca6",
+  "descriptionShort": "Matern care for known or susp placntl insuff, 2nd tri, fts3",
+  "descriptionLong": "Maternal care for known or suspected placental insufficiency, second trimester, fetus 3",
+  "stock": 50
 }, {
   "id": 43,
-  "title": "Sweet Evil (L'enfance du mal)",
-  "category": "Drama",
-  "year": 2007,
-  "company": "Durgan-Jones",
-  "image": "https://dummyimage.com/200x200/bd3061",
-  "descriptionShort": "Drug-induced gout, right knee",
-  "descriptionLong": "Drug-induced gout, right knee"
+  "title": "History of the World: Part I",
+  "category": "Comedy|Musical",
+  "year": 1994,
+  "company": "Wuckert Group",
+  "image": "https://dummyimage.com/200x200/393473",
+  "descriptionShort": "Subluxation and dislocation of C0/C1 cervical vertebrae",
+  "descriptionLong": "Subluxation and dislocation of C0/C1 cervical vertebrae",
+  "stock": 36
 }, {
   "id": 44,
-  "title": "The Learning Tree",
-  "category": "Drama",
-  "year": 2007,
-  "company": "Lehner, Paucek and Mayert",
-  "image": "https://dummyimage.com/200x200/b9a2e2",
-  "descriptionShort": "Chronic gout due to renal impairment, shoulder",
-  "descriptionLong": "Chronic gout due to renal impairment, shoulder"
+  "title": "Saw III",
+  "category": "Crime|Horror|Thriller",
+  "year": 2005,
+  "company": "Parisian-Borer",
+  "image": "https://dummyimage.com/200x200/69c0e7",
+  "descriptionShort": "Displ bicondylar fx r tibia, 7thH",
+  "descriptionLong": "Displaced bicondylar fracture of right tibia, subsequent encounter for open fracture type I or II with delayed healing",
+  "stock": 43
 }, {
   "id": 45,
-  "title": "Going the Distance",
-  "category": "Comedy|Romance",
-  "year": 2006,
-  "company": "Sporer, Veum and Price",
-  "image": "https://dummyimage.com/200x200/866a8c",
-  "descriptionShort": "Kidney transplant status",
-  "descriptionLong": "Kidney transplant status"
-}, {
-  "id": 46,
-  "title": "Cheap Detective, The",
+  "title": "Made for Each Other",
   "category": "Comedy",
   "year": 2010,
-  "company": "Hilll, Bergnaum and Paucek",
-  "image": "https://dummyimage.com/200x200/510b67",
-  "descriptionShort": "Strain of intrinsic msl/tnd at ank/ft level, unsp foot, init",
-  "descriptionLong": "Strain of intrinsic muscle and tendon at ankle and foot level, unspecified foot, initial encounter"
+  "company": "Mosciski, Stark and Kovacek",
+  "image": "https://dummyimage.com/200x200/b6c6d0",
+  "descriptionShort": "Injury of ulnar nerve at wrs/hnd lv of unsp arm, subs",
+  "descriptionLong": "Injury of ulnar nerve at wrist and hand level of unspecified arm, subsequent encounter",
+  "stock": 79
+}, {
+  "id": 46,
+  "title": "My Favorite Martian",
+  "category": "Comedy|Sci-Fi",
+  "year": 1994,
+  "company": "Ullrich Group",
+  "image": "https://dummyimage.com/200x200/8a7dc5",
+  "descriptionShort": "Other Hodgkin lymphoma, spleen",
+  "descriptionLong": "Other Hodgkin lymphoma, spleen",
+  "stock": 77
 }, {
   "id": 47,
-  "title": "Ice Men",
-  "category": "Drama",
-  "year": 2004,
-  "company": "Rodriguez Inc",
-  "image": "https://dummyimage.com/200x200/3add11",
-  "descriptionShort": "Tinnitus, unspecified ear",
-  "descriptionLong": "Tinnitus, unspecified ear"
+  "title": "O-Bi, O-Ba - The End of Civilization (O-bi, O-ba - Koniec cywilizacji)",
+  "category": "Drama|Mystery|Sci-Fi",
+  "year": 1986,
+  "company": "Kunde, Leannon and Lang",
+  "image": "https://dummyimage.com/200x200/f32cee",
+  "descriptionShort": "Stage 3 necrotizing enterocolitis in newborn",
+  "descriptionLong": "Stage 3 necrotizing enterocolitis in newborn",
+  "stock": 70
 }, {
   "id": 48,
-  "title": "Apple Dumpling Gang, The",
-  "category": "Children|Comedy|Western",
+  "title": "Dragon Ball Z: Bojack Unbound (Doragon bôru Z 9: Ginga girigiri!! Butchigiri no sugoi yatsu)",
+  "category": "Action|Adventure|Animation|Fantasy",
   "year": 2002,
-  "company": "Flatley LLC",
-  "image": "https://dummyimage.com/200x200/18a6b0",
-  "descriptionShort": "Perf due to fb acc left in body fol surgical operation, init",
-  "descriptionLong": "Perforation due to foreign body accidentally left in body following surgical operation, initial encounter"
+  "company": "Lynch-Weimann",
+  "image": "https://dummyimage.com/200x200/209617",
+  "descriptionShort": "Burn of unsp degree of unspecified lower leg, init encntr",
+  "descriptionLong": "Burn of unspecified degree of unspecified lower leg, initial encounter",
+  "stock": 40
 }, {
   "id": 49,
-  "title": "I Bought a Vampire Motorcycle",
-  "category": "Comedy|Horror",
-  "year": 2011,
-  "company": "Sauer-Stark",
-  "image": "https://dummyimage.com/200x200/d4031e",
-  "descriptionShort": "Milt op w explosn of improv explosv device, milt, init",
-  "descriptionLong": "Military operations involving explosion of improvised explosive device [IED], military personnel, initial encounter"
+  "title": "Driver, The",
+  "category": "Action|Crime|Film-Noir",
+  "year": 2004,
+  "company": "Daniel-Littel",
+  "image": "https://dummyimage.com/200x200/12c346",
+  "descriptionShort": "Other ossification of muscle, right forearm",
+  "descriptionLong": "Other ossification of muscle, right forearm",
+  "stock": 29
 }, {
   "id": 50,
-  "title": "Friend of the Deceased, A (Priyatel pokonika)",
+  "title": "King in New York, A",
   "category": "Comedy|Drama",
-  "year": 1989,
-  "company": "Gulgowski LLC",
-  "image": "https://dummyimage.com/200x200/36b8e3",
-  "descriptionShort": "Malignant neoplasm of anus, unspecified",
-  "descriptionLong": "Malignant neoplasm of anus, unspecified"
+  "year": 2004,
+  "company": "Jacobi, McLaughlin and Crona",
+  "image": "https://dummyimage.com/200x200/9b743f",
+  "descriptionShort": "Nondisp avuls fracture (chip fracture) of right talus, init",
+  "descriptionLong": "Nondisplaced avulsion fracture (chip fracture) of right talus, initial encounter for closed fracture",
+  "stock": 73
 }]
 
 export default titles

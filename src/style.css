@@ -64,7 +64,10 @@
   grid-template-columns: repeat(3, 1fr);
   justify-content: space-between;
   align-items: center;
-  
+}
+
+.itemContainer:hover{
+  scale: 5%;
 }
 
 .itemStyle {
@@ -72,4 +75,18 @@
   margin: 10px;
   background-color: rgb(158, 125, 248);
   box-shadow: 0px 1px 4px black;
+  padding: 5px;
+}
+
+.itemDetailStyle{
+  text-align: center;
+  margin: 15px auto;
+  background-color: rgba(158, 125, 248, 0.322);
+  box-shadow: 0px 1px 4px black;
+  padding: 10px;
+  width: 50%;
+}
+
+.itemDetailElement{
+  margin: 5px;
 }
