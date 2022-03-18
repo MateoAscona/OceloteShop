@@ -1,25 +1,27 @@
 import React, { useEffect, useState } from "react";
 import movies from "../database/movies.js";
-import ItemDetail from "./ItemDetail"
+import ItemDetail from "./ItemDetail";
+import { useParams } from "react-router-dom";
 
-function getMovie() {
-    return new Promise(function (resolve, reject) {
-      setTimeout(function () {
-        resolve(movies[0]);
-      });
-    }, 3000);
-  }
-
-const ItemDetailContainer = () => {
-  
-    const [item, setItem] = useState([]);
-  useEffect(() => {
-    getMovie()
-    .then(respuestaPromise => setItem(respuestaPromise))
-  }, []);
-
-  return <ItemDetail item={item} />;
-  
+function getMovie(movieId) {
+  return new Promise(function (resolve, reject) {
+    setTimeout(function () {
+      let movie = movies.find(item => item.id === Number(movieId))
+      resolve(movie);
+    });
+  }, 3000);
 }
 
-export default ItemDetailContainer
+const ItemDetailContainer = () => {
+  const [item, setItem] = useState([]);
+  const {movieId} = useParams()
+  useEffect(() => {
+    
+    getMovie(movieId)
+    .then(respuestaPromise => setItem(respuestaPromise));
+  }, [movieId]);
+
+  return <ItemDetail item={item} />;
+};
+
+export default ItemDetailContainer;

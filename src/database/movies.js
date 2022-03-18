@@ -1,7 +1,7 @@
-const titles = [{
+const movies = [{
   "id": 1,
   "title": "Edge of the City",
-  "category": "Drama|Film-Noir",
+  "category": "Drama",
   "year": 2008,
   "company": "Nicolas and Sons",
   "image": "https://dummyimage.com/200x200/33e229",
@@ -41,7 +41,7 @@ const titles = [{
 }, {
   "id": 5,
   "title": "Killing Zoe",
-  "category": "Crime|Drama|Thriller",
+  "category": "Thriller",
   "year": 2008,
   "company": "Mills-Willms",
   "image": "https://dummyimage.com/200x200/3a15ed",
@@ -51,7 +51,7 @@ const titles = [{
 }, {
   "id": 6,
   "title": "God told Me To",
-  "category": "Crime|Horror|Mystery|Sci-Fi|Thriller",
+  "category": "Thriller",
   "year": 2011,
   "company": "Homenick, Roob and Gleichner",
   "image": "https://dummyimage.com/200x200/75503e",
@@ -61,7 +61,7 @@ const titles = [{
 }, {
   "id": 7,
   "title": "Adrift in Tokyo (Tenten)",
-  "category": "Comedy|Drama",
+  "category": "Comedy",
   "year": 2007,
   "company": "Beier Group",
   "image": "https://dummyimage.com/200x200/104558",
@@ -81,7 +81,7 @@ const titles = [{
 }, {
   "id": 9,
   "title": "Men in War",
-  "category": "Drama|War",
+  "category": "Drama",
   "year": 1997,
   "company": "Turner, Rippin and Walker",
   "image": "https://dummyimage.com/200x200/7e84e9",
@@ -91,7 +91,7 @@ const titles = [{
 }, {
   "id": 10,
   "title": "North Star (a.k.a. Tashunga)",
-  "category": "Action|Adventure|Crime|Drama|Western",
+  "category": "Action",
   "year": 1968,
   "company": "Kris-Huel",
   "image": "https://dummyimage.com/200x200/9617e0",
@@ -101,7 +101,7 @@ const titles = [{
 }, {
   "id": 11,
   "title": "State of Emergency",
-  "category": "Sci-Fi|Thriller",
+  "category": "Thriller",
   "year": 1997,
   "company": "McDermott-Emmerich",
   "image": "https://dummyimage.com/200x200/bac3d5",
@@ -111,7 +111,7 @@ const titles = [{
 }, {
   "id": 12,
   "title": "The Phantom Light",
-  "category": "Mystery|Thriller",
+  "category": "Thriller",
   "year": 2007,
   "company": "Hirthe-Bernhard",
   "image": "https://dummyimage.com/200x200/b3f8d0",
@@ -121,7 +121,7 @@ const titles = [{
 }, {
   "id": 13,
   "title": "Postcards From the Edge",
-  "category": "Comedy|Drama",
+  "category": "Comedy",
   "year": 1992,
   "company": "Mills, Rohan and Wiza",
   "image": "https://dummyimage.com/200x200/b83977",
@@ -131,7 +131,7 @@ const titles = [{
 }, {
   "id": 14,
   "title": "Little Miss Marker",
-  "category": "Comedy|Drama",
+  "category": "Comedy",
   "year": 2008,
   "company": "Nikolaus-Zieme",
   "image": "https://dummyimage.com/200x200/47e0a5",
@@ -141,7 +141,7 @@ const titles = [{
 }, {
   "id": 15,
   "title": "Stickup, The",
-  "category": "Action|Crime|Mystery",
+  "category": "Action",
   "year": 2007,
   "company": "Bauch LLC",
   "image": "https://dummyimage.com/200x200/045b29",
@@ -161,7 +161,7 @@ const titles = [{
 }, {
   "id": 17,
   "title": "Prospero's Books",
-  "category": "Drama|Fantasy",
+  "category": "Drama",
   "year": 2005,
   "company": "Willms-Nader",
   "image": "https://dummyimage.com/200x200/5c82c7",
@@ -171,7 +171,7 @@ const titles = [{
 }, {
   "id": 18,
   "title": "Gigli",
-  "category": "Comedy|Crime|Romance",
+  "category": "Comedy",
   "year": 2004,
   "company": "Kilback-Rolfson",
   "image": "https://dummyimage.com/200x200/1ae03d",
@@ -181,7 +181,7 @@ const titles = [{
 }, {
   "id": 19,
   "title": "Drugstore Cowboy",
-  "category": "Crime|Drama",
+  "category": "Drama",
   "year": 1999,
   "company": "Osinski, Torp and Gaylord",
   "image": "https://dummyimage.com/200x200/233571",
@@ -201,7 +201,7 @@ const titles = [{
 }, {
   "id": 21,
   "title": "Chiko",
-  "category": "Crime|Drama",
+  "category": "Drama",
   "year": 1986,
   "company": "Hansen-Rowe",
   "image": "https://dummyimage.com/200x200/623d0a",
@@ -211,7 +211,7 @@ const titles = [{
 }, {
   "id": 22,
   "title": "Highlander II: The Quickening",
-  "category": "Action|Sci-Fi",
+  "category": "Action",
   "year": 1997,
   "company": "Greenfelder and Sons",
   "image": "https://dummyimage.com/200x200/4dde0b",
@@ -231,7 +231,7 @@ const titles = [{
 }, {
   "id": 24,
   "title": "Avengers, The",
-  "category": "Action|Adventure",
+  "category": "Action",
   "year": 2006,
   "company": "Heathcote Inc",
   "image": "https://dummyimage.com/200x200/b8e28c",
@@ -251,7 +251,7 @@ const titles = [{
 }, {
   "id": 26,
   "title": "Island, The",
-  "category": "Adventure|Horror|Thriller",
+  "category": "Thriller",
   "year": 1999,
   "company": "Greenfelder, Kiehn and Stamm",
   "image": "https://dummyimage.com/200x200/33311e",
@@ -311,7 +311,7 @@ const titles = [{
 }, {
   "id": 32,
   "title": "Guns of Navarone, The",
-  "category": "Action|Adventure|Drama|War",
+  "category": "Action",
   "year": 2010,
   "company": "Walsh-Wintheiser",
   "image": "https://dummyimage.com/200x200/74f7da",
@@ -331,7 +331,7 @@ const titles = [{
 }, {
   "id": 34,
   "title": "Short Film About John Bolton, A",
-  "category": "Fantasy|Horror|Mystery",
+  "category": "Thriller",
   "year": 1996,
   "company": "Daniel, Kuphal and Vandervort",
   "image": "https://dummyimage.com/200x200/013d9a",
@@ -341,7 +341,7 @@ const titles = [{
 }, {
   "id": 35,
   "title": "Leaves of Grass",
-  "category": "Comedy|Crime|Drama|Thriller",
+  "category": "Comedy",
   "year": 1988,
   "company": "Funk-Gutmann",
   "image": "https://dummyimage.com/200x200/e46fe4",
@@ -351,7 +351,7 @@ const titles = [{
 }, {
   "id": 36,
   "title": "Wild About Harry",
-  "category": "Comedy|Drama|Romance",
+  "category": "Comedy",
   "year": 2009,
   "company": "Bartell-Walker",
   "image": "https://dummyimage.com/200x200/53c8b6",
@@ -361,7 +361,7 @@ const titles = [{
 }, {
   "id": 37,
   "title": "Waiting Women (Kvinnors väntan)",
-  "category": "Comedy|Drama",
+  "category": "Comedy",
   "year": 2011,
   "company": "Adams-Mitchell",
   "image": "https://dummyimage.com/200x200/d126e6",
@@ -391,7 +391,7 @@ const titles = [{
 }, {
   "id": 40,
   "title": "Sharon's Baby",
-  "category": "Horror",
+  "category": "Thriller",
   "year": 2011,
   "company": "Raynor LLC",
   "image": "https://dummyimage.com/200x200/a28325",
@@ -411,7 +411,7 @@ const titles = [{
 }, {
   "id": 42,
   "title": "Big Trees, The",
-  "category": "Action|Drama",
+  "category": "Action",
   "year": 1985,
   "company": "Kihn, Dickens and Cronin",
   "image": "https://dummyimage.com/200x200/19eca6",
@@ -421,7 +421,7 @@ const titles = [{
 }, {
   "id": 43,
   "title": "History of the World: Part I",
-  "category": "Comedy|Musical",
+  "category": "Comedy",
   "year": 1994,
   "company": "Wuckert Group",
   "image": "https://dummyimage.com/200x200/393473",
@@ -431,7 +431,7 @@ const titles = [{
 }, {
   "id": 44,
   "title": "Saw III",
-  "category": "Crime|Horror|Thriller",
+  "category": "Thriller",
   "year": 2005,
   "company": "Parisian-Borer",
   "image": "https://dummyimage.com/200x200/69c0e7",
@@ -451,7 +451,7 @@ const titles = [{
 }, {
   "id": 46,
   "title": "My Favorite Martian",
-  "category": "Comedy|Sci-Fi",
+  "category": "Comedy",
   "year": 1994,
   "company": "Ullrich Group",
   "image": "https://dummyimage.com/200x200/8a7dc5",
@@ -461,7 +461,7 @@ const titles = [{
 }, {
   "id": 47,
   "title": "O-Bi, O-Ba - The End of Civilization (O-bi, O-ba - Koniec cywilizacji)",
-  "category": "Drama|Mystery|Sci-Fi",
+  "category": "Drama",
   "year": 1986,
   "company": "Kunde, Leannon and Lang",
   "image": "https://dummyimage.com/200x200/f32cee",
@@ -471,7 +471,7 @@ const titles = [{
 }, {
   "id": 48,
   "title": "Dragon Ball Z: Bojack Unbound (Doragon bôru Z 9: Ginga girigiri!! Butchigiri no sugoi yatsu)",
-  "category": "Action|Adventure|Animation|Fantasy",
+  "category": "Action",
   "year": 2002,
   "company": "Lynch-Weimann",
   "image": "https://dummyimage.com/200x200/209617",
@@ -481,7 +481,7 @@ const titles = [{
 }, {
   "id": 49,
   "title": "Driver, The",
-  "category": "Action|Crime|Film-Noir",
+  "category": "Action",
   "year": 2004,
   "company": "Daniel-Littel",
   "image": "https://dummyimage.com/200x200/12c346",
@@ -491,7 +491,7 @@ const titles = [{
 }, {
   "id": 50,
   "title": "King in New York, A",
-  "category": "Comedy|Drama",
+  "category": "Drama",
   "year": 2004,
   "company": "Jacobi, McLaughlin and Crona",
   "image": "https://dummyimage.com/200x200/9b743f",
@@ -500,4 +500,4 @@ const titles = [{
   "stock": 73
 }]
 
-export default titles
+export default movies
