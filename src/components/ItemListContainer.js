@@ -14,7 +14,6 @@ function getData(idCategory) {
           (item) => item.category == idCategory
         );
         resolve(moviesCategory);
-        console.log(moviesCategory);
       }
     }, 1500);
   });

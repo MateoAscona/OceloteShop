@@ -9,7 +9,7 @@ const Item = ({ item }) => {
       <h3>{item.category}</h3>
       <h4>{item.company}</h4>
       <p>{item.descriptionShort}</p>
-      <Link to={`/item/${item.id}`}>Ver Detalles</Link>
+      <Link to={`/item/${item.id}`}>Details</Link>
     </article>
   );
 };
