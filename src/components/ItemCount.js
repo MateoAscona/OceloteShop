@@ -13,7 +13,7 @@ const ItemCount = ({ initial, stock, onAdd }) => {
       setCount(count - 1);
     }
   };
-
+  
   return (
     <div className="countContainer">
       <div className="buttonsContainer">

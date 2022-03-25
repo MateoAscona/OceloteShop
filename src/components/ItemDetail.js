@@ -1,14 +1,20 @@
 import React from "react";
 import ItemCount from "./ItemCount";
-import useState from "react";
 import { Link } from "react-router-dom";
+import {  useState } from "react";
+import { useCartContext } from "./CartContext";
+
+
 
 const ItemDetail = ({ item }) => {
-  const [countInCart, setCountInCart] = React.useState(0);
-  let onAdd = (count) => {
-    setCountInCart(count);
-  };
+  const { addToCart } = useCartContext;
+  const [countInCart, setCountInCart] = useState(0);
+  
 
+  const onAdd = (count) => {
+    setCountInCart(count);
+    addToCart(item, countInCart);
+  };
   return (
     <article className="itemDetailStyle">
       <h1 className="itemDetailElement">{item.title}</h1>
