@@ -3,6 +3,7 @@ import { useState } from "react";
 
 const ItemCount = ({ initial, stock, onAdd }) => {
   let [count, setCount] = useState(initial);
+
   const add = () => {
     if (count < stock) {
       setCount(count + 1);
@@ -13,7 +14,7 @@ const ItemCount = ({ initial, stock, onAdd }) => {
       setCount(count - 1);
     }
   };
-  
+
   return (
     <div className="countContainer">
       <div className="buttonsContainer">

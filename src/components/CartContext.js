@@ -1,7 +1,7 @@
 import React from "react";
 import { createContext } from "react";
 import { useState } from "react";
-import { useContext } from "react/cjs/react.production.min";
+import { useContext } from "react";
 
 const cartContext = createContext();
 const { Provider } = cartContext;
@@ -10,18 +10,18 @@ export const useCartContext = () => useContext(cartContext);
 
 const CartContextProvider = ({ children }) => {
   const [cart, setCart] = useState([]);
-  const [cartItems, setCartItems] = useState(0);
-  const [cartTotal, setCartTotal] = useState(0);
 
   const itemExist = (id) => {
-    cart.some((item) => item.id === id);
+    return cart.some(function (item) {
+      return item.id === id;
+    });
   };
 
-  const addToCart = (product, qty) => {
-    const itemToCart = { ...product, qty };
+  const addToCart = (item, qty) => {
     const cartCopy = [...cart];
-    if (itemExist(itemToCart.id)) {
-      const index = cart.findIndex((item) => item.id === product.id);
+    const itemToCart = { ...item, qty };
+    if (itemExist(item.id)) {
+      const index = cart.findIndex((i) => i.id === item.id);
 
       cartCopy[index].qty += qty;
       setCart(cartCopy);
@@ -31,25 +31,22 @@ const CartContextProvider = ({ children }) => {
     }
   };
 
-  const removeFromCart = (id) => {};
-
-  const cleanCart = () => {
-    setCart = [];
+  const removeFromCart = (id) => {
+    const cartCopy = [...cart];
+    const index = cart.findIndex((i) => i.id === id);
+    cartCopy.splice(index, 1);
+    setCart(cartCopy);
   };
 
-  const cartQty = () => {
-    let qty = 0;
-    cart.forEach((item) => (qty = item.qty));
-    return qty;
+  let cleanCart = () => {
+    setCart([]);
   };
+
   const contextValue = {
     cart,
-    cartItems,
-    cartTotal,
     addToCart,
     cleanCart,
-    cartQty,
-    removeFromCart
+    removeFromCart,
   };
 
   return <Provider value={contextValue}>{children}</Provider>;

@@ -7,13 +7,13 @@ import { useCartContext } from "./CartContext";
 
 
 const ItemDetail = ({ item }) => {
-  const { addToCart } = useCartContext;
+  const { addToCart, cartQty } = useCartContext();
   const [countInCart, setCountInCart] = useState(0);
   
 
   const onAdd = (count) => {
     setCountInCart(count);
-    addToCart(item, countInCart);
+    addToCart(item, count);
   };
   return (
     <article className="itemDetailStyle">
