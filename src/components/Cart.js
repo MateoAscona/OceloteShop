@@ -1,9 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 import { useCartContext } from "./CartContext";
+import TotalPrice from "./TotalPrice";
 
 const Cart = () => {
-  const { cart, removeFromCart, cleanCart } = useCartContext();
+  const { cart, removeFromCart, cleanCart, totalPrice, updateTotalPrice } =
+    useCartContext();
 
   if (cart.length === 0)
     return (
@@ -51,6 +54,7 @@ const Cart = () => {
             })}
           </tbody>
         </table>
+        <TotalPrice />
         <button
           className="cleanButton"
           onClick={() => {

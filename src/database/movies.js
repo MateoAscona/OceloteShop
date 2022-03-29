@@ -7,7 +7,8 @@ const movies = [{
   "image": "https://dummyimage.com/200x200/33e229",
   "descriptionShort": "Unsp car occ injured in clsn w rail trn/veh nontraf, init",
   "descriptionLong": "Unspecified car occupant injured in collision with railway train or railway vehicle in nontraffic accident, initial encounter",
-  "stock": 22
+  "stock": 22,
+  "price": 20,
 }, {
   "id": 2,
   "title": "Back from Eternity",
@@ -17,7 +18,8 @@ const movies = [{
   "image": "https://dummyimage.com/200x200/e879ec",
   "descriptionShort": "Oth injury of vein at forearm level, unspecified arm",
   "descriptionLong": "Other specified injury of vein at forearm level, unspecified arm",
-  "stock": 45
+  "stock": 45,
+  "price": 20,
 }, {
   "id": 3,
   "title": "Jiro Dreams of Sushi",
@@ -27,7 +29,8 @@ const movies = [{
   "image": "https://dummyimage.com/200x200/ad799d",
   "descriptionShort": "Disp fx of neck of scapula, l shldr, subs for fx w nonunion",
   "descriptionLong": "Displaced fracture of neck of scapula, left shoulder, subsequent encounter for fracture with nonunion",
-  "stock": 66
+  "stock": 66,
+  "price": 20,
 }, {
   "id": 4,
   "title": "Kings of the Road (Im Lauf der Zeit)",
@@ -37,7 +40,8 @@ const movies = [{
   "image": "https://dummyimage.com/200x200/717a6e",
   "descriptionShort": "Tox eff of carb monx fr incmpl combst dmst fuel, acc, subs",
   "descriptionLong": "Toxic effect of carbon monoxide from incomplete combustion of other domestic fuels, accidental (unintentional), subsequent encounter",
-  "stock": 45
+  "stock": 45,
+  "price": 20,
 }, {
   "id": 5,
   "title": "Killing Zoe",
@@ -47,7 +51,8 @@ const movies = [{
   "image": "https://dummyimage.com/200x200/3a15ed",
   "descriptionShort": "Major osseous defect, forearm",
   "descriptionLong": "Major osseous defect, forearm",
-  "stock": 91
+  "stock": 91,
+  "price": 20,
 }, {
   "id": 6,
   "title": "God told Me To",
@@ -57,7 +62,8 @@ const movies = [{
   "image": "https://dummyimage.com/200x200/75503e",
   "descriptionShort": "Nondisp fx of body of hamate bone, unsp wrs, 7thP",
   "descriptionLong": "Nondisplaced fracture of body of hamate [unciform] bone, unspecified wrist, subsequent encounter for fracture with malunion",
-  "stock": 7
+  "stock": 7,
+  "price": 20,
 }, {
   "id": 7,
   "title": "Adrift in Tokyo (Tenten)",
@@ -67,7 +73,8 @@ const movies = [{
   "image": "https://dummyimage.com/200x200/104558",
   "descriptionShort": "Functional diarrhea",
   "descriptionLong": "Functional diarrhea",
-  "stock": 5
+  "stock": 5,
+  "price": 20,
 }, {
   "id": 8,
   "title": "Steel Magnolias",
@@ -77,7 +84,8 @@ const movies = [{
   "image": "https://dummyimage.com/200x200/686d07",
   "descriptionShort": "Traum rupt of palmar ligmt of unsp finger at MCP/IP jt, init",
   "descriptionLong": "Traumatic rupture of palmar ligament of unspecified finger at metacarpophalangeal and interphalangeal joint, initial encounter",
-  "stock": 12
+  "stock": 12,
+  "price": 20,
 }, {
   "id": 9,
   "title": "Men in War",
@@ -87,7 +95,8 @@ const movies = [{
   "image": "https://dummyimage.com/200x200/7e84e9",
   "descriptionShort": "Unsp sprain of unspecified shoulder joint, init encntr",
   "descriptionLong": "Unspecified sprain of unspecified shoulder joint, initial encounter",
-  "stock": 59
+  "stock": 59,
+  "price": 20,
 }, {
   "id": 10,
   "title": "North Star (a.k.a. Tashunga)",
@@ -97,7 +106,8 @@ const movies = [{
   "image": "https://dummyimage.com/200x200/9617e0",
   "descriptionShort": "Disp fx of l tibial spin, 7thF",
   "descriptionLong": "Displaced fracture of left tibial spine, subsequent encounter for open fracture type IIIA, IIIB, or IIIC with routine healing",
-  "stock": 83
+  "stock": 83,
+  "price": 20,
 }, {
   "id": 11,
   "title": "State of Emergency",
@@ -107,7 +117,8 @@ const movies = [{
   "image": "https://dummyimage.com/200x200/bac3d5",
   "descriptionShort": "Superficial frostbite of unspecified ear, subs encntr",
   "descriptionLong": "Superficial frostbite of unspecified ear, subsequent encounter",
-  "stock": 65
+  "stock": 65,
+  "price": 20,
 }, {
   "id": 12,
   "title": "The Phantom Light",
@@ -117,7 +128,8 @@ const movies = [{
   "image": "https://dummyimage.com/200x200/b3f8d0",
   "descriptionShort": "Calcifcn and ossifictn of muscles assoc w burns, r forearm",
   "descriptionLong": "Calcification and ossification of muscles associated with burns, right forearm",
-  "stock": 21
+  "stock": 21,
+  "price": 20,
 }, {
   "id": 13,
   "title": "Postcards From the Edge",
@@ -127,7 +139,8 @@ const movies = [{
   "image": "https://dummyimage.com/200x200/b83977",
   "descriptionShort": "Failure in dosage in electroshock or insulin-shock therapy",
   "descriptionLong": "Failure in dosage in electroshock or insulin-shock therapy",
-  "stock": 43
+  "stock": 43,
+  "price": 20,
 }, {
   "id": 14,
   "title": "Little Miss Marker",
@@ -137,7 +150,8 @@ const movies = [{
   "image": "https://dummyimage.com/200x200/47e0a5",
   "descriptionShort": "Underdosing of hydantoin derivatives",
   "descriptionLong": "Underdosing of hydantoin derivatives",
-  "stock": 59
+  "stock": 59,
+  "price": 20,
 }, {
   "id": 15,
   "title": "Stickup, The",
@@ -147,7 +161,8 @@ const movies = [{
   "image": "https://dummyimage.com/200x200/045b29",
   "descriptionShort": "Shrt lst unil nerlgif hdache w cnjnct inject/tear, ntrct",
   "descriptionLong": "Short lasting unilateral neuralgiform headache with conjunctival injection and tearing (SUNCT), intractable",
-  "stock": 60
+  "stock": 60,
+  "price": 20,
 }, {
   "id": 16,
   "title": "The Ghosts in Our Machine",
@@ -157,7 +172,8 @@ const movies = [{
   "image": "https://dummyimage.com/200x200/24ce19",
   "descriptionShort": "Third [oculomotor] nerve palsy, left eye",
   "descriptionLong": "Third [oculomotor] nerve palsy, left eye",
-  "stock": 74
+  "stock": 74,
+  "price": 20,
 }, {
   "id": 17,
   "title": "Prospero's Books",
@@ -167,7 +183,8 @@ const movies = [{
   "image": "https://dummyimage.com/200x200/5c82c7",
   "descriptionShort": "Poisn by unsp antieplptc and sed-hypntc drugs, slf-hrm, sqla",
   "descriptionLong": "Poisoning by unspecified antiepileptic and sedative-hypnotic drugs, intentional self-harm, sequela",
-  "stock": 33
+  "stock": 33,
+  "price": 20,
 }, {
   "id": 18,
   "title": "Gigli",
@@ -177,7 +194,8 @@ const movies = [{
   "image": "https://dummyimage.com/200x200/1ae03d",
   "descriptionShort": "Oth traum displ spondylolysis of seventh cervcal vert, init",
   "descriptionLong": "Other traumatic displaced spondylolisthesis of seventh cervical vertebra, initial encounter for closed fracture",
-  "stock": 9
+  "stock": 9,
+  "price": 20,
 }, {
   "id": 19,
   "title": "Drugstore Cowboy",
@@ -187,7 +205,8 @@ const movies = [{
   "image": "https://dummyimage.com/200x200/233571",
   "descriptionShort": "Open bite of left lesser toe(s) w damage to nail, subs",
   "descriptionLong": "Open bite of left lesser toe(s) with damage to nail, subsequent encounter",
-  "stock": 9
+  "stock": 9,
+  "price": 20,
 }, {
   "id": 20,
   "title": "Metropolitan",
@@ -197,7 +216,8 @@ const movies = [{
   "image": "https://dummyimage.com/200x200/27d0fe",
   "descriptionShort": "Unsp fx first MC bone, unsp hand, subs for fx w routn heal",
   "descriptionLong": "Unspecified fracture of first metacarpal bone, unspecified hand, subsequent encounter for fracture with routine healing",
-  "stock": 4
+  "stock": 4,
+  "price": 20,
 }, {
   "id": 21,
   "title": "Chiko",
@@ -207,7 +227,8 @@ const movies = [{
   "image": "https://dummyimage.com/200x200/623d0a",
   "descriptionShort": "Disp fx of less tuberosity of r humer, 7thD",
   "descriptionLong": "Displaced fracture of lesser tuberosity of right humerus, subsequent encounter for fracture with routine healing",
-  "stock": 39
+  "stock": 39,
+  "price": 20,
 }, {
   "id": 22,
   "title": "Highlander II: The Quickening",
@@ -217,7 +238,8 @@ const movies = [{
   "image": "https://dummyimage.com/200x200/4dde0b",
   "descriptionShort": "Athetoid cerebral palsy",
   "descriptionLong": "Athetoid cerebral palsy",
-  "stock": 7
+  "stock": 7,
+  "price": 20,
 }, {
   "id": 23,
   "title": "Bastards (Les salauds)",
@@ -227,7 +249,8 @@ const movies = [{
   "image": "https://dummyimage.com/200x200/69123e",
   "descriptionShort": "Person outsd pk-up/van inj in clsn w pedl cyc in traf, subs",
   "descriptionLong": "Person on outside of pick-up truck or van injured in collision with pedal cycle in traffic accident, subsequent encounter",
-  "stock": 93
+  "stock": 93,
+  "price": 20,
 }, {
   "id": 24,
   "title": "Avengers, The",
@@ -237,7 +260,8 @@ const movies = [{
   "image": "https://dummyimage.com/200x200/b8e28c",
   "descriptionShort": "Secondary noninfectious iridocyclitis, left eye",
   "descriptionLong": "Secondary noninfectious iridocyclitis, left eye",
-  "stock": 36
+  "stock": 36,
+  "price": 20,
 }, {
   "id": 25,
   "title": "Wonderful and Loved by All (Underbar och älskad av alla)",
@@ -247,7 +271,8 @@ const movies = [{
   "image": "https://dummyimage.com/200x200/30d849",
   "descriptionShort": "Disloc of proximal interphaln joint of l rng fngr, sequela",
   "descriptionLong": "Dislocation of proximal interphalangeal joint of left ring finger, sequela",
-  "stock": 20
+  "stock": 20,
+  "price": 20,
 }, {
   "id": 26,
   "title": "Island, The",
@@ -257,7 +282,8 @@ const movies = [{
   "image": "https://dummyimage.com/200x200/33311e",
   "descriptionShort": "Unspecified superficial injury of unspecified thigh, sequela",
   "descriptionLong": "Unspecified superficial injury of unspecified thigh, sequela",
-  "stock": 87
+  "stock": 87,
+  "price": 20,
 }, {
   "id": 27,
   "title": "Somersault",
@@ -267,7 +293,8 @@ const movies = [{
   "image": "https://dummyimage.com/200x200/724bf2",
   "descriptionShort": "Pnctr w fb of unsp great toe w/o damage to nail, init",
   "descriptionLong": "Puncture wound with foreign body of unspecified great toe without damage to nail, initial encounter",
-  "stock": 87
+  "stock": 87,
+  "price": 20,
 }, {
   "id": 28,
   "title": "Brannigan",
@@ -277,7 +304,8 @@ const movies = [{
   "image": "https://dummyimage.com/200x200/575587",
   "descriptionShort": "Monteggia's fx unsp ulna, 7thF",
   "descriptionLong": "Monteggia's fracture of unspecified ulna, subsequent encounter for open fracture type IIIA, IIIB, or IIIC with routine healing",
-  "stock": 8
+  "stock": 8,
+  "price": 20,
 }, {
   "id": 29,
   "title": "Fog City Mavericks",
@@ -287,7 +315,8 @@ const movies = [{
   "image": "https://dummyimage.com/200x200/d9eba3",
   "descriptionShort": "Strain unsp musc/fasc/tend at thi lev, right thigh, sequela",
   "descriptionLong": "Strain of unspecified muscles, fascia and tendons at thigh level, right thigh, sequela",
-  "stock": 57
+  "stock": 57,
+  "price": 20,
 }, {
   "id": 30,
   "title": "Don't Stop Believin': Everyman's Journey",
@@ -297,7 +326,8 @@ const movies = [{
   "image": "https://dummyimage.com/200x200/237e25",
   "descriptionShort": "Burn of second degree of left axilla, subsequent encounter",
   "descriptionLong": "Burn of second degree of left axilla, subsequent encounter",
-  "stock": 9
+  "stock": 9,
+  "price": 20,
 }, {
   "id": 31,
   "title": "Private School",
@@ -307,7 +337,8 @@ const movies = [{
   "image": "https://dummyimage.com/200x200/ae28e7",
   "descriptionShort": "Abn lev drug/meds/biol subst in specimens from resp org/thrx",
   "descriptionLong": "Abnormal level of other drugs, medicaments and biological substances in specimens from respiratory organs and thorax",
-  "stock": 56
+  "stock": 56,
+  "price": 20,
 }, {
   "id": 32,
   "title": "Guns of Navarone, The",
@@ -317,7 +348,8 @@ const movies = [{
   "image": "https://dummyimage.com/200x200/74f7da",
   "descriptionShort": "Laceration with foreign body of thumb without damage to nail",
   "descriptionLong": "Laceration with foreign body of thumb without damage to nail",
-  "stock": 31
+  "stock": 31,
+  "price": 20,
 }, {
   "id": 33,
   "title": "Dear Zachary: A Letter to a Son About His Father",
@@ -327,7 +359,8 @@ const movies = [{
   "image": "https://dummyimage.com/200x200/cb7fd1",
   "descriptionShort": "Inj flexor musc/fasc/tend thmb at forearm level, sequela",
   "descriptionLong": "Other injury of flexor muscle, fascia and tendon of unspecified thumb at forearm level, sequela",
-  "stock": 75
+  "stock": 75,
+  "price": 20,
 }, {
   "id": 34,
   "title": "Short Film About John Bolton, A",
@@ -337,7 +370,8 @@ const movies = [{
   "image": "https://dummyimage.com/200x200/013d9a",
   "descriptionShort": "Unsp injury of radial artery at forarm lv, unsp arm, subs",
   "descriptionLong": "Unspecified injury of radial artery at forearm level, unspecified arm, subsequent encounter",
-  "stock": 23
+  "stock": 23,
+  "price": 20,
 }, {
   "id": 35,
   "title": "Leaves of Grass",
@@ -347,7 +381,8 @@ const movies = [{
   "image": "https://dummyimage.com/200x200/e46fe4",
   "descriptionShort": "Other physeal fracture of right calcaneus, 7thB",
   "descriptionLong": "Other physeal fracture of right calcaneus, initial encounter for open fracture",
-  "stock": 26
+  "stock": 26,
+  "price": 20,
 }, {
   "id": 36,
   "title": "Wild About Harry",
@@ -357,7 +392,8 @@ const movies = [{
   "image": "https://dummyimage.com/200x200/53c8b6",
   "descriptionShort": "Chronic multifocal osteomyelitis, left ankle and foot",
   "descriptionLong": "Chronic multifocal osteomyelitis, left ankle and foot",
-  "stock": 30
+  "stock": 30,
+  "price": 20,
 }, {
   "id": 37,
   "title": "Waiting Women (Kvinnors väntan)",
@@ -367,7 +403,8 @@ const movies = [{
   "image": "https://dummyimage.com/200x200/d126e6",
   "descriptionShort": "Other superficial bite, unspecified lower leg, sequela",
   "descriptionLong": "Other superficial bite, unspecified lower leg, sequela",
-  "stock": 92
+  "stock": 92,
+  "price": 20,
 }, {
   "id": 38,
   "title": "Kummeli V",
@@ -377,7 +414,8 @@ const movies = [{
   "image": "https://dummyimage.com/200x200/8734e0",
   "descriptionShort": "Displaced comminuted fracture of shaft of humerus, right arm",
   "descriptionLong": "Displaced comminuted fracture of shaft of humerus, right arm",
-  "stock": 62
+  "stock": 62,
+  "price": 20,
 }, {
   "id": 39,
   "title": "Electric Shadows (Meng ying tong nian)",
@@ -387,7 +425,8 @@ const movies = [{
   "image": "https://dummyimage.com/200x200/bc7834",
   "descriptionShort": "Laceration with foreign body, left hip, sequela",
   "descriptionLong": "Laceration with foreign body, left hip, sequela",
-  "stock": 69
+  "stock": 69,
+  "price": 20,
 }, {
   "id": 40,
   "title": "Sharon's Baby",
@@ -397,7 +436,8 @@ const movies = [{
   "image": "https://dummyimage.com/200x200/a28325",
   "descriptionShort": "Adverse effect of ganglionic blocking drugs",
   "descriptionLong": "Adverse effect of ganglionic blocking drugs",
-  "stock": 73
+  "stock": 73,
+  "price": 20,
 }, {
   "id": 41,
   "title": "My Sister Eileen",
@@ -407,7 +447,8 @@ const movies = [{
   "image": "https://dummyimage.com/200x200/1f62ed",
   "descriptionShort": "Toxic effect of manganese and its compounds, undet, sequela",
   "descriptionLong": "Toxic effect of manganese and its compounds, undetermined, sequela",
-  "stock": 45
+  "stock": 45,
+  "price": 20,
 }, {
   "id": 42,
   "title": "Big Trees, The",
@@ -417,7 +458,8 @@ const movies = [{
   "image": "https://dummyimage.com/200x200/19eca6",
   "descriptionShort": "Matern care for known or susp placntl insuff, 2nd tri, fts3",
   "descriptionLong": "Maternal care for known or suspected placental insufficiency, second trimester, fetus 3",
-  "stock": 50
+  "stock": 50,
+  "price": 20,
 }, {
   "id": 43,
   "title": "History of the World: Part I",
@@ -427,7 +469,8 @@ const movies = [{
   "image": "https://dummyimage.com/200x200/393473",
   "descriptionShort": "Subluxation and dislocation of C0/C1 cervical vertebrae",
   "descriptionLong": "Subluxation and dislocation of C0/C1 cervical vertebrae",
-  "stock": 36
+  "stock": 36,
+  "price": 20,
 }, {
   "id": 44,
   "title": "Saw III",
@@ -437,7 +480,8 @@ const movies = [{
   "image": "https://dummyimage.com/200x200/69c0e7",
   "descriptionShort": "Displ bicondylar fx r tibia, 7thH",
   "descriptionLong": "Displaced bicondylar fracture of right tibia, subsequent encounter for open fracture type I or II with delayed healing",
-  "stock": 43
+  "stock": 43,
+  "price": 20,
 }, {
   "id": 45,
   "title": "Made for Each Other",
@@ -447,7 +491,8 @@ const movies = [{
   "image": "https://dummyimage.com/200x200/b6c6d0",
   "descriptionShort": "Injury of ulnar nerve at wrs/hnd lv of unsp arm, subs",
   "descriptionLong": "Injury of ulnar nerve at wrist and hand level of unspecified arm, subsequent encounter",
-  "stock": 79
+  "stock": 79,
+  "price": 20,
 }, {
   "id": 46,
   "title": "My Favorite Martian",
@@ -457,7 +502,8 @@ const movies = [{
   "image": "https://dummyimage.com/200x200/8a7dc5",
   "descriptionShort": "Other Hodgkin lymphoma, spleen",
   "descriptionLong": "Other Hodgkin lymphoma, spleen",
-  "stock": 77
+  "stock": 77,
+  "price": 20,
 }, {
   "id": 47,
   "title": "O-Bi, O-Ba - The End of Civilization (O-bi, O-ba - Koniec cywilizacji)",
@@ -467,7 +513,8 @@ const movies = [{
   "image": "https://dummyimage.com/200x200/f32cee",
   "descriptionShort": "Stage 3 necrotizing enterocolitis in newborn",
   "descriptionLong": "Stage 3 necrotizing enterocolitis in newborn",
-  "stock": 70
+  "stock": 70,
+  "price": 20,
 }, {
   "id": 48,
   "title": "Dragon Ball Z: Bojack Unbound (Doragon bôru Z 9: Ginga girigiri!! Butchigiri no sugoi yatsu)",
@@ -477,7 +524,8 @@ const movies = [{
   "image": "https://dummyimage.com/200x200/209617",
   "descriptionShort": "Burn of unsp degree of unspecified lower leg, init encntr",
   "descriptionLong": "Burn of unspecified degree of unspecified lower leg, initial encounter",
-  "stock": 40
+  "stock": 40,
+  "price": 20,
 }, {
   "id": 49,
   "title": "Driver, The",
@@ -487,7 +535,8 @@ const movies = [{
   "image": "https://dummyimage.com/200x200/12c346",
   "descriptionShort": "Other ossification of muscle, right forearm",
   "descriptionLong": "Other ossification of muscle, right forearm",
-  "stock": 29
+  "stock": 29,
+  "price": 20,
 }, {
   "id": 50,
   "title": "King in New York, A",
@@ -497,7 +546,8 @@ const movies = [{
   "image": "https://dummyimage.com/200x200/9b743f",
   "descriptionShort": "Nondisp avuls fracture (chip fracture) of right talus, init",
   "descriptionLong": "Nondisplaced avulsion fracture (chip fracture) of right talus, initial encounter for closed fracture",
-  "stock": 73
+  "stock": 73,
+  "price": 20,
 }]
 
 export default movies

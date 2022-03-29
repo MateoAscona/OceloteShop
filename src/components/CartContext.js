@@ -10,6 +10,8 @@ export const useCartContext = () => useContext(cartContext);
 
 const CartContextProvider = ({ children }) => {
   const [cart, setCart] = useState([]);
+  const [totalPrice, setTotalPrice] = useState(0);
+  const [cartQty, setCartQty] = useState(0);
 
   const itemExist = (id) => {
     return cart.some(function (item) {
@@ -42,11 +44,31 @@ const CartContextProvider = ({ children }) => {
     setCart([]);
   };
 
+  const updateTotalPrice = () => {
+    let total = 0;
+    cart.forEach((item) => {
+      total += item.price * item.qty;
+    });
+    return setTotalPrice(total);
+  };
+
+  const updateCartQty = () => {
+    let qty = 0;
+    cart.forEach((item) => {
+      qty += item.qty;
+    });
+    return setCartQty(qty);
+  };
+
   const contextValue = {
     cart,
     addToCart,
     cleanCart,
     removeFromCart,
+    updateTotalPrice,
+    totalPrice,
+    updateCartQty,
+    cartQty,
   };
 
   return <Provider value={contextValue}>{children}</Provider>;
