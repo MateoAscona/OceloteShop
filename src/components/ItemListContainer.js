@@ -3,37 +3,17 @@ import ItemList from "./ItemList";
 import movies from "../database/movies.js";
 import { toast } from "react-toastify";
 import { useParams } from "react-router-dom";
-
-function getData(idCategory) {
-  return new Promise(function (resolve, reject) {
-    setTimeout(function () {
-      if (!idCategory) {
-        resolve(movies);
-      } else {
-        let moviesCategory = movies.filter(
-          (item) => item.category == idCategory
-        );
-        resolve(moviesCategory);
-      }
-    }, 1500);
-  });
-}
+import {getAllProducts, getProductsByCategory} from "../firebase/dbFunctions";
 
 const ItemListContainer = () => {
   const [items, setItems] = useState([]);
   const { idCategory } = useParams();
 
   useEffect(() => {
-    toast.info("Obteniendo datos");
-
-    getData(idCategory)
-      .then((respuestaPromise) => {
-        toast.dismiss();
-        setItems(respuestaPromise);
-      })
-      .catch(() => {
-        toast.error("Error al obtener datos");
-      });
+    if(!idCategory){
+      getAllProducts().then(products => setItems(products))}
+    else{
+      getProductsByCategory(idCategory).then(products => setItems(products))}
   }, [idCategory]);
 
   return <ItemList items={items} />;

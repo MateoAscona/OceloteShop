@@ -4,20 +4,20 @@ import { NavLink } from "react-router-dom";
 const NavLinks = () => {
   return (
     <nav className="nav-item">
-      <NavLink to={`/category/Drama`} className="a__nav-item">
-        Drama
+      <NavLink to={`/category/Processor`} className="a__nav-item">
+      Processor
       </NavLink>
-      <NavLink to={`/category/Comedy`} className="a__nav-item">
-        Comedy
+      <NavLink to={`/category/Motherboard`} className="a__nav-item">
+      Motherboard
       </NavLink>
-      <NavLink to={`/category/Thriller`} className="a__nav-item">
-        Thriller
+      <NavLink to={`/category/RAM`} className="a__nav-item">
+      RAM
       </NavLink>
-      <NavLink to={`/category/Action`} className="a__nav-item">
-        Action
+      <NavLink to={`/category/SSD`} className="a__nav-item">
+      SSD
       </NavLink>
-      <NavLink to={`/category/Documentary`} className="a__nav-item">
-        Documentary
+      <NavLink to={`/category/HDD`} className="a__nav-item">
+      HDD
       </NavLink>
     </nav>
   );

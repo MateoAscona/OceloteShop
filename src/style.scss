@@ -173,3 +173,9 @@ a {
     border-radius: 10px;
   }
 }
+
+.itemImg{
+  max-width: 250px;
+  max-height: 250px;
+  object-fit: fill;
+}
