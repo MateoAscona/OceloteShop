@@ -7,7 +7,7 @@ import {
   doc,
   getDoc,
   Timestamp,
-  addDoc
+  addDoc,
 } from "firebase/firestore/lite";
 
 export async function getAllProducts() {
@@ -39,4 +39,5 @@ export async function pushOrder(order) {
   const orderWithTime = { ...order, date: time };
   const myColec = collection(firestoreDB, "Orders");
   const newOrder = await addDoc(myColec, orderWithTime);
+  return newOrder.id;
 }

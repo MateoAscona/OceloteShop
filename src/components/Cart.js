@@ -2,27 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useCartContext } from "./CartContext";
 import TotalPrice from "./TotalPrice";
-import { pushOrder } from "../firebase/dbFunctions";
 
 const Cart = () => {
-  const { cart, removeFromCart, cleanCart, totalPrice } =
-    useCartContext();
-
-    const orderData = {
-      buyer: {
-        name: "Juan",
-        phone: "123456789",
-        email: "juan@coder.com"
-      },
-      items: cart,
-      total: totalPrice,
-    };
-
-  const onSubmit = (e) => {
-    pushOrder(orderData);
-    cleanCart();
-  };
-
+  const { cart, removeFromCart, cleanCart } = useCartContext();
 
   if (cart.length === 0)
     return (
@@ -80,7 +62,7 @@ const Cart = () => {
           Clean Cart
         </button>
         <button>
-          <Link className="checkoutButton" to={"/checkout"} onClick={()=>{onSubmit()}}>
+          <Link className="checkoutButton" to={"/checkout"}>
             Checkout
           </Link>
         </button>
