@@ -5,7 +5,7 @@ import { useState } from "react";
 import { useCartContext } from "./CartContext";
 
 const ItemDetail = ({ item }) => {
-  const { addToCart, updateTotalPrice } = useCartContext();
+  const { addToCart } = useCartContext();
   const [countInCart, setCountInCart] = useState(0);
 
   const onAdd = (count) => {
@@ -22,7 +22,7 @@ const ItemDetail = ({ item }) => {
       ></img>
       <h3 className="itemDetailElement">{item.category}</h3>
       <h4 className="itemDetailElement">{item.company}</h4>
-      <p className="itemDetailElement">{item.descriptionLong}</p>
+      <p className="itemDetailElement">{item.description}</p>
       {countInCart === 0 ? (
         <ItemCount stock={item.stock} initial={1} onAdd={onAdd} />
       ) : (
