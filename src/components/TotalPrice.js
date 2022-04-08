@@ -8,7 +8,7 @@ const TotalPrice = () => {
     updateTotalPrice();
   }, [cart]);
 
-  return <div>{totalPrice}</div>;
+  return <p className="totalPrice">Total: ${totalPrice}</p>;
 };
 
 export default TotalPrice;

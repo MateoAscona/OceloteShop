@@ -4,21 +4,21 @@ import { useCartContext } from "./CartContext";
 import TotalPrice from "./TotalPrice";
 
 const Cart = () => {
-  const { cart, removeFromCart, cleanCart } = useCartContext();
+  const { cart, removeFromCart, cleanCart, isOn } = useCartContext();
 
   if (cart.length === 0)
     return (
-      <div className="emptyCartContainer">
+      <div className={`emptyCartContainer${isOn}`}>
         <h1>Cart is empty</h1>
         <p>Add something to cart</p>
-        <Link className="backButton" to={"/"}>
+        <Link className="defaultButton" to={"/"}>
           Back to the store
         </Link>
       </div>
     );
   else
     return (
-      <div className="cartTableContainer">
+      <div className={`cartTableContainer${isOn}`}>
         <table className="cartTable">
           <thead className="cartThead">
             <tr>
@@ -39,7 +39,7 @@ const Cart = () => {
                   <td>{item.qty}</td>
                   <td>
                     <button
-                      className="cartButton"
+                      className="deleteButtons"
                       onClick={() => {
                         removeFromCart(item.id);
                       }}
@@ -53,19 +53,20 @@ const Cart = () => {
           </tbody>
         </table>
         <TotalPrice />
-        <button
-          className="cleanButton"
-          onClick={() => {
-            cleanCart();
-          }}
-        >
-          Clean Cart
-        </button>
-        <button>
-          <Link className="checkoutButton" to={"/checkout"}>
+        <div className="cartButtonsContainer">
+          <button
+            className="deleteButtons"
+            onClick={() => {
+              cleanCart();
+            }}
+          >
+            Clean Cart
+          </button>
+
+          <Link className="defaultButton" to={"/checkout"}>
             Checkout
           </Link>
-        </button>
+        </div>
       </div>
     );
 };

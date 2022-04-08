@@ -9,8 +9,10 @@ const Item = ({ item }) => {
       <h3>{item.category}</h3>
       <h4>{item.company}</h4>
       <p>{item.description}</p>
-      <p>${item.price}</p>
-      <Link to={`/item/${item.id}`}>Details</Link>
+      <p className="itemPrice">${item.price}</p>
+      <Link to={`/item/${item.id}`} className="defaultButton">
+        Buy
+      </Link>
     </article>
   );
 };

@@ -5,7 +5,7 @@ import { useState } from "react";
 import { useCartContext } from "./CartContext";
 
 const ItemDetail = ({ item }) => {
-  const { addToCart } = useCartContext();
+  const { addToCart, isOn } = useCartContext();
   const [countInCart, setCountInCart] = useState(0);
 
   const onAdd = (count) => {
@@ -13,13 +13,9 @@ const ItemDetail = ({ item }) => {
     addToCart(item, count);
   };
   return (
-    <article className="itemDetailStyle">
+    <article className={`itemDetailStyle${isOn}`}>
       <h1 className="itemDetailElement">{item.title}</h1>
-      <img
-        className="itemDetailElement"
-        src={item.image}
-        alt={item.title}
-      ></img>
+      <img src={item.image} alt={item.title}></img>
       <h3 className="itemDetailElement">{item.category}</h3>
       <h4 className="itemDetailElement">{item.company}</h4>
       <p className="itemDetailElement">{item.description}</p>

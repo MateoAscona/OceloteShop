@@ -1,0 +1,110 @@
+.header-styleLight {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #651fff;
+  box-shadow: 0 1.5px 5px rgb(255, 255, 255);
+  height: 3em;
+
+  .cartWidget {
+    margin-right: 10px;
+    color: aliceblue;
+  }
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    .a__nav-item,
+    .nav-item {
+      text-decoration: none;
+      list-style: none;
+      margin: 0.2em;
+      margin-left: 0.4em;
+      color: aliceblue;
+      font-size: 1em;
+      font-weight: 600;
+    }
+  }
+  h1 {
+    display: flex;
+    justify-content: space-between;
+    .header__title {
+      color: aliceblue;
+      margin-left: 10px;
+      font-weight: 600;
+      text-shadow: 1.5px 1px 4px rgba(255, 255, 255, 0.5);
+    }
+    img {
+      width: 1em;
+      height: 1em;
+      align-self: center;
+      margin: 0 5px;
+    }
+  }
+}
+
+.header-styleDark {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #651fff;
+  box-shadow: 0 0.5px 5px rgb(255, 255, 255);
+  height: 3em;
+
+  .cartWidget {
+    margin-right: 10px;
+    color: #4b4b4b;
+  }
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    .a__nav-item,
+    .nav-item {
+      text-decoration: none;
+      list-style: none;
+      margin: 0.2em;
+      margin-left: 0.4em;
+      color: #4b4b4b;
+      font-size: 1em;
+      font-weight: 600;
+    }
+  }
+  h1 {
+    display: flex;
+    justify-content: space-between;
+    .header__title {
+      color: #4b4b4b;
+      margin-left: 10px;
+      font-weight: 600;
+    }
+    img {
+      width: 1em;
+      height: 1em;
+      align-self: center;
+      margin: 0 5px;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header-styleLight,
+  .header-styleDark {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    .header__title {
+      margin-left: 0;
+      margin-top: 0.5em;
+    }
+    .cartWidget {
+      margin-right: 0;
+    }
+    .nav {
+      flex-direction: column;
+      .a__nav-item,
+      .nav-item {
+        margin: 0.5em;
+      }
+    }
+  }
+} ;

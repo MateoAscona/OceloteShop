@@ -60,6 +60,17 @@ const CartContextProvider = ({ children }) => {
     return setCartQty(qty);
   };
 
+  // DARK MODE
+  const [isOn, setIsOn] = useState("Light");
+
+  const darkMode = () => {
+    if (isOn === "Light") {
+      setIsOn("Dark");
+    } else {
+      setIsOn("Light");
+    }
+  };
+
   const contextValue = {
     cart,
     addToCart,
@@ -69,6 +80,10 @@ const CartContextProvider = ({ children }) => {
     totalPrice,
     updateCartQty,
     cartQty,
+
+    // DARK MODE
+    isOn,
+    darkMode,
   };
 
   return <Provider value={contextValue}>{children}</Provider>;

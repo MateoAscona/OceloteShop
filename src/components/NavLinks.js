@@ -5,19 +5,19 @@ const NavLinks = () => {
   return (
     <nav className="nav-item">
       <NavLink to={`/category/Processor`} className="a__nav-item">
-      Processor
+        Processor
       </NavLink>
       <NavLink to={`/category/Motherboard`} className="a__nav-item">
-      Motherboard
+        Motherboard
       </NavLink>
       <NavLink to={`/category/RAM`} className="a__nav-item">
-      RAM
+        RAM
       </NavLink>
       <NavLink to={`/category/SSD`} className="a__nav-item">
-      SSD
+        SSD
       </NavLink>
       <NavLink to={`/category/HDD`} className="a__nav-item">
-      HDD
+        HDD
       </NavLink>
     </nav>
   );
