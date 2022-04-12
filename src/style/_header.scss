@@ -16,6 +16,7 @@
     align-items: center;
     justify-content: center;
     font-weight: 600;
+    max-width: 15%;
   }
   .nav {
     display: flex;
@@ -56,6 +57,7 @@
   background-color: #651fff;
   box-shadow: 0 0.5px 5px rgb(255, 255, 255);
   height: 8vh;
+  
 
   .cartWidget {
     margin-right: 10px;
@@ -67,6 +69,8 @@
     align-items: center;
     justify-content: center;
     font-weight: 600;
+    max-width: 15%;
+    
   }
   .nav {
     display: flex;
