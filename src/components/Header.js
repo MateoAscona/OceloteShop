@@ -3,10 +3,11 @@ import Nav from "./Nav";
 import { Link } from "react-router-dom";
 import logo from "../logo.png";
 import Switch from "./Switch";
-import { useCartContext } from "./CartContext";
+import { useThemeContext } from "../context/ThemeContext";
+
 
 const Header = () => {
-  const { isOn } = useCartContext();
+  const { isOn } = useThemeContext();
   return (
     <header className={`header-style${isOn}`}>
       <h1>

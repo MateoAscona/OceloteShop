@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { useCartContext } from "./CartContext";
+import { useCartContext } from "../context/CartContext";
 import { useEffect } from "react";
 
 const CartWidget = () => {
@@ -9,7 +9,7 @@ const CartWidget = () => {
     updateCartQty();
   }, [cart]);
   if (cartQty === 0) {
-    return <div className="cartWidget"></div>;
+    return <span></span>;
   } else {
     return (
       <Link to="/cart" className="cartWidget">

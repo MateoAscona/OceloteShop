@@ -1,8 +1,8 @@
 import React from "react";
-import { useCartContext } from "./CartContext";
+import { useThemeContext } from "../context/ThemeContext";
 
 const Switch = () => {
-  const { isOn, darkMode } = useCartContext();
+  const { isOn, darkMode } = useThemeContext();
 
   return (
     <label className="label">

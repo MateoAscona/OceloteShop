@@ -1,9 +1,9 @@
 import React from "react";
 import Item from "./Item";
-import { useCartContext } from "./CartContext";
+import { useThemeContext } from "../context/ThemeContext";
 
 const ItemList = ({ items }) => {
-  const { isOn } = useCartContext();
+ const {isOn} = useThemeContext();
   return (
     <section className={`itemContainer${isOn}`}>
       {items.map((item) => {

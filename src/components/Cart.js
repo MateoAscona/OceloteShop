@@ -1,10 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { useCartContext } from "./CartContext";
+import { useCartContext } from "../context/CartContext";
 import TotalPrice from "./TotalPrice";
+import { useThemeContext } from "../context/ThemeContext";
 
 const Cart = () => {
-  const { cart, removeFromCart, cleanCart, isOn } = useCartContext();
+  const { cart, removeFromCart, cleanCart } = useCartContext();
+  const { isOn } = useThemeContext();
 
   if (cart.length === 0)
     return (

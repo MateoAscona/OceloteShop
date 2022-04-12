@@ -1,12 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import { useCartContext } from "./CartContext";
+import { useCartContext } from "../context/CartContext";
+import { useThemeContext } from "../context/ThemeContext";
 import { pushOrder } from "../firebase/dbFunctions";
 import logo from "../logo.png";
 
 const Checkout = () => {
-  const { cart, totalPrice, cleanCart, isOn } = useCartContext();
+  const { cart, totalPrice, cleanCart } = useCartContext();
+  const { isOn } = useThemeContext();
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
@@ -54,9 +56,6 @@ const Checkout = () => {
             className="formInput"
             type="text"
             placeholder="Name"
-            required
-            minLength={3}
-            maxLength={15}
             onChange={(e) => {
               updateName(e);
             }}
@@ -73,8 +72,6 @@ const Checkout = () => {
             className="formInput"
             type="text"
             placeholder="Phone"
-            required
-            minLength={8}
             onChange={(e) => {
               updatePhone(e);
             }}

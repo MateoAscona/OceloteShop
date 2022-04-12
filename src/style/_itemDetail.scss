@@ -1,11 +1,15 @@
 .itemDetailStyleLight {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   text-align: center;
   margin: 15px auto;
   background-color: rgb(255, 255, 255);
   box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.267);
   padding: 10px;
   width: 50%;
-  height: 100%;
+  height: auto;
   border-radius: 3px;
   .itemDetailElement {
     margin: 5px;
@@ -17,8 +21,6 @@
     flex-direction: column;
     width: 30%;
     margin: auto;
-    border: 1px solid black;
-    border-radius: 3px;
     .buttonsContainer {
       display: flex;
       justify-content: space-around;
@@ -42,13 +44,18 @@
 }
 
 .itemDetailStyleDark {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
   text-align: center;
   margin: 15px auto;
   background-color: rgb(73, 73, 73);
   box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.267);
   padding: 10px;
   width: 50%;
-  height: 100%;
+  height: auto;
   border-radius: 3px;
   color: #ffffff;
   .itemDetailElement {

@@ -2,10 +2,12 @@ import React from "react";
 import ItemCount from "./ItemCount";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import { useCartContext } from "./CartContext";
+import { useCartContext } from "../context/CartContext";
+import { useThemeContext } from "../context/ThemeContext";
 
 const ItemDetail = ({ item }) => {
-  const { addToCart, isOn } = useCartContext();
+  const { addToCart } = useCartContext();
+  const {isOn} = useThemeContext();
   const [countInCart, setCountInCart] = useState(0);
 
   const onAdd = (count) => {

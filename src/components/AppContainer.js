@@ -2,10 +2,10 @@ import React from "react";
 import Header from "./Header";
 import Main from "./Main";
 import Footer from "./Footer";
-import { useCartContext } from "./CartContext";
+import { useThemeContext } from "../context/ThemeContext";
 
 const AppContainer = () => {
-  const { isOn } = useCartContext();
+  const { isOn } = useThemeContext();
   return (
     <div className={`app${isOn}`}>
       <Header />

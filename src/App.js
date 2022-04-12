@@ -1,15 +1,18 @@
 import React from "react";
 import { BrowserRouter } from "react-router-dom";
-import CartContextProvider from "./components/CartContext";
+import CartContextProvider from "./context/CartContext";
 import AppContainer from "./components/AppContainer";
+import ThemeContextProvider from "./context/ThemeContext";
 
 const App = () => {
   return (
-    <CartContextProvider>
-      <BrowserRouter>
-        <AppContainer />
-      </BrowserRouter>
-    </CartContextProvider>
+    <ThemeContextProvider>
+      <CartContextProvider>
+        <BrowserRouter>
+          <AppContainer />
+        </BrowserRouter>
+      </CartContextProvider>
+    </ThemeContextProvider>
   );
 };
 

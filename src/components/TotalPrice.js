@@ -1,6 +1,6 @@
 import React from "react";
 import { useEffect } from "react";
-import { useCartContext } from "./CartContext";
+import { useCartContext } from "../context/CartContext";
 
 const TotalPrice = () => {
   const { cart, updateTotalPrice, totalPrice } = useCartContext();

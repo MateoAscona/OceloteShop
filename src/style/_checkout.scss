@@ -1,6 +1,6 @@
 .checkoutContainerLight {
   width: 50%;
-  height: 18em;
+  min-height: 87vh;
   text-align: center;
   margin: 15px auto;
   background-color: rgb(255, 255, 255);
@@ -41,7 +41,7 @@
 
 .checkoutContainerDark {
   width: 50%;
-  height: 18em;
+  min-height: 80vh;
   text-align: center;
   margin: 15px auto;
   background-color: rgb(73, 73, 73);
