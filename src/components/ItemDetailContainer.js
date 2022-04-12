@@ -8,7 +8,7 @@ const ItemDetailContainer = () => {
   const { itemId } = useParams();
 
   useEffect(() => {
-    getOneProduct(itemId).then((respuestaPromise) => setItem(respuestaPromise));
+    getOneProduct(itemId).then((respuestaPromise) => setItem(respuestaPromise))
   }, [itemId]);
 
   return <ItemDetail item={item} />;

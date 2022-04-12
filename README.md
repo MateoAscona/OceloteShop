@@ -19,10 +19,13 @@ El objetivo es poner en practica todos los conocimientos adquiridos en los temas
 
 + React JS - Frontend
 + React-Router-Dom - Router
++ Toastify - Notificaciones
 + SASS - Preprocesador de CSS
 + Firebase - Base de datos
 
 ## Demo
+
+Aqui se puede ver un demo del E-commerce:
 
 [OceloteShop](https://profound-lily-fed8eb.netlify.app)
 
@@ -32,5 +35,5 @@ El objetivo es poner en practica todos los conocimientos adquiridos en los temas
 + Nombre: Mateo Ascona
 + E-Mail: asconamateo@gmail.com
 + LinkedIn: https://www.linkedin.com/in/mateo-ascona/
-+ Descripcion: Desarrollador web en constante aprendisaje, actualmente con conocimientos en Front-End y proyeccion a formarme como Fullstack.
++ Descripcion: Desarrollador web en formacion y constante aprendisaje, actualmente con conocimientos en Front-End y proyeccion a formarme como Fullstack.
 

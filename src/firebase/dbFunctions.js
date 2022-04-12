@@ -4,8 +4,6 @@ import {
   getDocs,
   query,
   where,
-  doc,
-  getDoc,
   Timestamp,
   addDoc,
 } from "firebase/firestore/lite";
