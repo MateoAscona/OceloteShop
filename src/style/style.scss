@@ -12,15 +12,5 @@ a {
   text-decoration: none;
 }
 
-// .appLight {
-//   background-color: rgb(177, 177, 177);
-//   min-height: 100vh;
-// }
-
-// .appDark {
-//   background-color: #777777;
-//   min-height: 100vh;
-// }
-
 @import "buttons.scss", "itemDetail.scss", "header.scss", "itemList.scss",
   "cart.scss", "footer.scss", "checkout.scss", "switch.scss";
