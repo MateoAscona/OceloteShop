@@ -32,4 +32,5 @@ El objetivo es poner en practica todos los conocimientos adquiridos en los temas
 + Nombre: Mateo Ascona
 + E-Mail: asconamateo@gmail.com
 + LinkedIn: https://www.linkedin.com/in/mateo-ascona/
++ Descripcion: Desarrollador web en constante aprendisaje, actualmente con conocimientos en Front-End y proyeccion a formarme como Fullstack.
 
