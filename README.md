@@ -11,7 +11,7 @@ El objetivo es poner en practica todos los conocimientos adquiridos en los temas
 ## Abrir el proyecto
 
     git clone https://github.com/MateoAscona/OceloteShop-AsconaMateo.git
-    cd OceloteShop
+    cd OceloteShop-AsconaMateo
     npm install
     npm start
 
